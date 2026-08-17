@@ -2,18 +2,18 @@
 <span class="markdown"><p>En la Figura 1 se muestra el modelo conceptual de la ontología con sus clases y relaciones (propiedades de objeto).</p>
 <p><center><img src="images/diagrama-conceptual.png"/><figcaption>
 Figura 1. Modelo conceptual de la ontología</figcaption></center></p>
-<p>La ontología reutiliza conceptos relacionados a sensores de la (<a href="https://w3c.github.io/sdw-sosa-ssn/ssn/">Semantic Sensor Network Ontology</a>) para representar el consumo de suministros de un elemento de la infraestructura. Un <a href="#InfrastructureElement">elemento de la infraestructura</a> es cualquier equipamiento o elemento urbano que puede tener  <a href="#UtilitySupplyPoint">puntos de suministro de servicios</a>.  Estos puntos  son <a href="#http://www.w3.org/ns/sosa/FeatureOfInterest">características de interés</a> de las mediciones
+<p>La ontología reutiliza conceptos relacionados a sensores de la (<a href="https://w3c.github.io/sdw-sosa-ssn/ssn/">Semantic Sensor Network Ontology</a>) para representar el consumo de suministros de un elemento de la infraestructura. Un <a href="#https://edint.es/def/infraestructura#InfrastructureElement">elemento de la infraestructura</a> es cualquier equipamiento o elemento urbano que puede tener  <a href="#UtilitySupplyPoint">puntos de suministro de servicios</a>.  Estos puntos  son <a href="#http://www.w3.org/ns/sosa/FeatureOfInterest">características de interés</a> de las mediciones
  <a href="#http://www.w3.org/ns/sosa/madeBySensor">hechas con sensores</a>, que a su vez <a href="#http://www.w3.org/ns/sosa/observes">observan</a> una <a href="#http://www.w3.org/ns/sosa/ObservableProperty">propiedad observable</a> tal como el consumo de electricidad, el consumo de gas o el consumo de agua.</p>
 
-<p>Un <a href="#UtilityMeter">medidor</a> es un sensor que mide el consumo del suministro. Los <a href="#UtilityConsumption">consumos de un suministro</a> reflejan la cantidad consumida en cierto período de tiempo. Para representar los consumos se reutiliza la ontología de cantidades, unidades, dimensiones y tipos, <a href="https://www.qudt.org/">Quantities, Units, Dimensions and DataTypes Ontology</a>. El valor del consumo se representa mediante la clase  <a href="#http://qudt.org/schema/qudt/QuantityValue">QuantityValue</a> que expresa la magnitud y el tipo de una cantidad y se obtiene multiplicando un <a href="#http://qudt.org/schema/qudt/value">valor numérico n</a> por una unidad de medida que se obtiene a través de la propiedad <a href="#http://qudt.org/schema/qudt/hasUnit">hasUnit</a> que se relaciona con la clase <a href="#http://qudt.org/schema/qudt/Unit">Unit</a> que contiene un catálogo de uniddes de medida, por ejempo kilovatio-hora (unit:KiloW-HR) utilizado para medir el consumo de electricidad.  El período medido se representa mediante la clase  <a href="#http://www.w3.org/2006/time#Interval">Interval</a> en donde su hora de inicio y hora de fin se relacionan con un instante de tiempo (<a href="#http://www.w3.org/2006/time#Instant">Instant</a>). El <a href="#http://vocab.linkeddata.es/datosabiertos/kos/edint/UtilityType">tipo de suministro</a> es una taxonomía en donde se tienen conceptos como "energía activa", "energía reactiva" y "gas".  El medidor tiene un <a href="#http://vocab.linkeddata.es/datosabiertos/kos/edint/MeterType">tipo de medidor</a> que por ejemplo para consumo de energía puede ser "externo", "procesado" o "telemedida". 
+<p>Un <a href="#UtilityMeter">medidor</a> es un sensor que mide el consumo del suministro. Los <a href="#UtilityConsumption">consumos de un suministro</a> reflejan la cantidad consumida en cierto período de tiempo. Para representar los consumos se reutiliza la ontología de cantidades, unidades, dimensiones y tipos, <a href="https://www.qudt.org/">Quantities, Units, Dimensions and DataTypes Ontology</a>. El valor del consumo se representa mediante la clase  <a href="#http://qudt.org/schema/qudt/QuantityValue">QuantityValue</a> que expresa la magnitud y el tipo de una cantidad y se obtiene multiplicando un <a href="#http://qudt.org/schema/qudt/value">valor numérico n</a> por una unidad de medida que se obtiene a través de la propiedad <a href="#http://qudt.org/schema/qudt/hasUnit">hasUnit</a> que se relaciona con la clase <a href="#http://qudt.org/schema/qudt/Unit">Unit</a> que contiene un catálogo de uniddes de medida, por ejempo kilovatio-hora (unit:KiloW-HR) utilizado para medir el consumo de electricidad.  El período medido se representa mediante la clase  <a href="#http://www.w3.org/2006/time#Interval">Interval</a> en donde su hora de inicio y hora de fin se relacionan con un instante de tiempo (<a href="#http://www.w3.org/2006/time#Instant">Instant</a>). El <a href="#https://edint.es/kos/UtilityType">tipo de suministro</a> es una taxonomía en donde se tienen conceptos como "energía activa", "energía reactiva" y "gas".  El medidor tiene un <a href="#https://edint.es/kos/MeterType">tipo de medidor</a> que por ejemplo para consumo de energía puede ser "externo", "procesado" o "telemedida". 
 El <a href="#UtilityContract">contrato de servicio</a> tiene un <a href="#contractHolder">titular</a> y se <a href="#appliesTo">aplica</a> un determinado punto de suministro. El contrato también se asocia con una <a href="#UtilityRate">tarifa</a>. Un medidor de suministro es un sensor que "observa" una propiedad que puede ser por ejemplo el consumo de electricidad, gas o agua.</p>
 
 <pre><textarea style="resize:none" readonly id="code2" name="code" rows="25" cols="100">
 @prefix dct: &lt;http://purl.org/dc/terms/&gt; .
-@prefix edintinf: &lt;http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/infraestructura#&gt; .
-@prefix edintmetertype: &lt;http://vocab.linkeddata.es/datosabiertos/kos/edint/MeterType/&gt; .
-@prefix edintsum: &lt;http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/suministro#&gt; .
-@prefix edintutiltype: &lt;http://vocab.linkeddata.es/datosabiertos/kos/edint/UtilityType/&gt; .
+@prefix edintinf: &lt;https://edint.es/def/infraestructura#&gt; .
+@prefix edintmetertype: &lt;https://edint.es/kos/MeterType/&gt; .
+@prefix edintsum: &lt;https://edint.es/def/suministro#&gt; .
+@prefix edintutiltype: &lt;https://edint.es/kos/UtilityType/&gt; .
 @prefix esdir: &lt;http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/direccion-postal#&gt; .
 @prefix ester: &lt;http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#&gt; .
 @prefix geosparql: &lt;http://www.opengis.net/ont/geosparql#&gt; .
@@ -32,110 +32,110 @@ El <a href="#UtilityContract">contrato de servicio</a> tiene un <a href="#contra
 @prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
 
 # Consumo de un suministro
-&lt;http://vocab.linkeddata.es/datosabiertos/recurso/ConsumoSuministro/2258.0_2020_03_AMBIBAMMATUTE_General&gt;
+&lt;https://example.org/recurso/ConsumoSuministro/2258.0_2020_03_AMBIBAMMATUTE_General&gt;
   a edintsum:UtilityConsumption;
   dct:identifier "2258.0_2020_03_AMBIBAMMATUTE_General";
   rdfs:label "Consumo de 13099 kWh en 3/2020", "Lectura del sensor AMBIBAMMATUTE_General correspondiente a 3/2020";
-  sosa:hasFeatureOfInterest &lt;http://vocab.linkeddata.es/datosabiertos/recurso/puntoSuministro/ES2002783120652701XX&gt;;
-  sosa:hasResult &lt;http://vocab.linkeddata.es/datosabiertos/recurso/valorSuministro/2258.0_2020_03_AMBIBAMMATUTE_General&gt;;
-  sosa:madeBySensor &lt;http://vocab.linkeddata.es/datosabiertos/recurso/medidorSuministro/AMBIBAMMATUTE_General&gt;;
-  sosa:phenomenonTime &lt;http://vocab.linkeddata.es/datosabiertos/recurso/intervaloMedicion/2258.0_2020_03_AMBIBAMMATUTE_General&gt; .
+  sosa:hasFeatureOfInterest &lt;https://example.org/recurso/puntoSuministro/ES2002783120652701XX&gt;;
+  sosa:hasResult &lt;https://example.org/recurso/valorSuministro/2258.0_2020_03_AMBIBAMMATUTE_General&gt;;
+  sosa:madeBySensor &lt;https://example.org/recurso/medidorSuministro/AMBIBAMMATUTE_General&gt;;
+  sosa:phenomenonTime &lt;https://example.org/recurso/intervaloMedicion/2258.0_2020_03_AMBIBAMMATUTE_General&gt; .
 
 # Contrato de suministro
-&lt;http://vocab.linkeddata.es/datosabiertos/recurso/contratoSuministo/2258.0&gt; a edintsum:UtilityContract;
+&lt;https://example.org/recurso/contratoSuministo/2258.0&gt; a edintsum:UtilityContract;
   dct:identifier "Contrato-ES2002783120652701XX";
-  edintsum:appliesTo &lt;http://vocab.linkeddata.es/datosabiertos/recurso/puntoSuministro/ES2002783120652701XX&gt;;
-  edintsum:contractHolder &lt;http://vocab.linkeddata.es/datosabiertos/recurso/organizacion/AyuntamientoDeMadrid&gt;;
-  edintsum:hasRate &lt;http://vocab.linkeddata.es/datosabiertos/recurso/tarifaSuministro/tarifa_activa_general&gt;;
+  edintsum:appliesTo &lt;https://example.org/recurso/puntoSuministro/ES2002783120652701XX&gt;;
+  edintsum:contractHolder &lt;https://example.org/recurso/organizacion/AyuntamientoDeMadrid&gt;;
+  edintsum:hasRate &lt;https://example.org/recurso/tarifaSuministro/tarifa_activa_general&gt;;
   rdfs:label "Contrato de suministro de activeenergy situado en CALLE ISAAC ALBENIZ, 1 28019 MADRID",
     "Contrato de suministro para: Biblioteca Ana María Matute" .
 
 # Dirección postal
-&lt;http://vocab.linkeddata.es/datosabiertos/recurso/direccion-postal/28019&gt; a esdir:DireccionPostal;
+&lt;https://example.org/recurso/direccion-postal/28019&gt; a esdir:DireccionPostal;
   rdfs:label "CALLE ISAAC ALBENIZ, 1 28019 MADRID" .
 
 # Definición de la Geometría
-&lt;http://vocab.linkeddata.es/datosabiertos/recurso/equipamiento-municipal/locations/438873.92-4472154.36&gt;
+&lt;https://example.org/recurso/equipamiento-municipal/locations/438873.92-4472154.36&gt;
   a geosparql:Geometry;
   geosparql:asWKT "POINT (-3.7202936410904 40.3977521494866)"^^geosparql:wktLiteral .
 
 # Elemento de la infraestructura municipal
-&lt;http://vocab.linkeddata.es/datosabiertos/recurso/equipamientoMunicipal/2258.0&gt; a
+&lt;https://example.org/recurso/equipamientoMunicipal/2258.0&gt; a
     edintinf:InfrastructureElement;
   dct:identifier "2258.0";
-  edintinf:belongsTo &lt;http://vocab.linkeddata.es/datosabiertos/recurso/sector-publico/territorio/barrio/113&gt;;
-  edintsum:hasUtilitySupplyPoint &lt;http://vocab.linkeddata.es/datosabiertos/recurso/puntoSuministro/ES2002783120652701XX&gt;;
-  geosparql:hasGeometry &lt;http://vocab.linkeddata.es/datosabiertos/recurso/equipamiento-municipal/locations/438873.92-4472154.36&gt;;
+  edintinf:belongsTo &lt;https://example.org/recurso/sector-publico/territorio/barrio/113&gt;;
+  edintsum:hasUtilitySupplyPoint &lt;https://example.org/recurso/puntoSuministro/ES2002783120652701XX&gt;;
+  geosparql:hasGeometry &lt;https://example.org/recurso/equipamiento-municipal/locations/438873.92-4472154.36&gt;;
   rdfs:label "Biblioteca Ana María Matute";
-  schema:address &lt;http://vocab.linkeddata.es/datosabiertos/recurso/direccion-postal/28019&gt; .
+  schema:address &lt;https://example.org/recurso/direccion-postal/28019&gt; .
 
 # Instante de tiempo de comienzo de un intervalo
-&lt;http://vocab.linkeddata.es/datosabiertos/recurso/instante/2258.0_2020_03_AMBIBAMMATUTE_General/2020-03-01T00%3A00%3A00Z&gt;
+&lt;https://example.org/recurso/instante/2258.0_2020_03_AMBIBAMMATUTE_General/2020-03-01T00%3A00%3A00Z&gt;
   a time:Instant;
   rdfs:label "Instante de tiempo: 2020-03-01T00:00:00Z";
   time:inXSDDateTimeStamp "2020-03-01T00:00:00Z"^^xsd:dateTimeStamp .
 
 # Instante de tiempo de final de un intervalo
-&lt;http://vocab.linkeddata.es/datosabiertos/recurso/instante/2258.0_2020_03_AMBIBAMMATUTE_General/2020-03-31T23%3A59%3A59Z&gt;
+&lt;https://example.org/recurso/instante/2258.0_2020_03_AMBIBAMMATUTE_General/2020-03-31T23%3A59%3A59Z&gt;
   a time:Instant;
   rdfs:label "Instante de tiempo: 2020-03-31T23:59:59Z";
   time:inXSDDateTimeStamp "2020-03-31T23:59:59Z"^^xsd:dateTimeStamp .
 
 # Intervalo de tiempo
-&lt;http://vocab.linkeddata.es/datosabiertos/recurso/intervaloMedicion/2258.0_2020_03_AMBIBAMMATUTE_General&gt;
+&lt;https://example.org/recurso/intervaloMedicion/2258.0_2020_03_AMBIBAMMATUTE_General&gt;
   a time:Interval;
   rdfs:label "Período de medición correspondiente a 3/2020";
-  time:hasBeginning &lt;http://vocab.linkeddata.es/datosabiertos/recurso/instante/2258.0_2020_03_AMBIBAMMATUTE_General/2020-03-01T00%3A00%3A00Z&gt;;
-  time:hasEnd &lt;http://vocab.linkeddata.es/datosabiertos/recurso/instante/2258.0_2020_03_AMBIBAMMATUTE_General/2020-03-31T23%3A59%3A59Z&gt; .
+  time:hasBeginning &lt;https://example.org/recurso/instante/2258.0_2020_03_AMBIBAMMATUTE_General/2020-03-01T00%3A00%3A00Z&gt;;
+  time:hasEnd &lt;https://example.org/recurso/instante/2258.0_2020_03_AMBIBAMMATUTE_General/2020-03-31T23%3A59%3A59Z&gt; .
 
 # Medidor de consumo de un suministro
-&lt;http://vocab.linkeddata.es/datosabiertos/recurso/medidorSuministro/AMBIBAMMATUTE_General&gt;
+&lt;https://example.org/recurso/medidorSuministro/AMBIBAMMATUTE_General&gt;
   a edintsum:UtilityMeter;
   dct:identifier "AMBIBAMMATUTE_General";
   edintsum:hasMeterType edintmetertype:external;
   rdfs:label "Medidor: AMBIBAMMATUTE_General, Sensor/Medidor de tipo: external";
-  schema:manufacturer &lt;http://vocab.linkeddata.es/datosabiertos/recurso/organizacion/Siemens&gt; .
+  schema:manufacturer &lt;https://example.org/recurso/organizacion/Siemens&gt; .
 
 # Organización que gestiona el elemento de la infraestructura
-&lt;http://vocab.linkeddata.es/datosabiertos/recurso/organizacion/AyuntamientoDeMadrid&gt;
+&lt;https://example.org/recurso/organizacion/AyuntamientoDeMadrid&gt;
   a schema:Organization;
   dct:identifier "AyuntamientoDeMadrid";
   rdf:label "Ayuntamiento de Madrid";
   schema:legalName "Ayuntamiento de Madrid" .
 
 # Organización fabricante del medidor
-&lt;http://vocab.linkeddata.es/datosabiertos/recurso/organizacion/Siemens&gt; a schema:Organization;
+&lt;https://example.org/recurso/organizacion/Siemens&gt; a schema:Organization;
   dct:identifier "Siemens";
   rdfs:label "Fabricante: Siemens" .
 
 # Punto de suministro
-&lt;http://vocab.linkeddata.es/datosabiertos/recurso/puntoSuministro/ES2002783120652701XX&gt;
+&lt;https://example.org/recurso/puntoSuministro/ES2002783120652701XX&gt;
   a edintsum:UtilitySupplyPoint;
   dct:identifier "ES2002783120652701XX";
   edintsum:hasUtilityType edintutiltype:activeenergy;
   rdfs:label "Punto de Suministro ES2002783120652701XX, Descripción/Grupo: Activa Interruptor Gral" .
 
 # Barrio al que pertenece el elemento de la infraestructura
-&lt;http://vocab.linkeddata.es/datosabiertos/recurso/sector-publico/territorio/barrio/113&gt;
+&lt;https://example.org/recurso/sector-publico/territorio/barrio/113&gt;
   a ester:Barrio;
   dct:identifier "113";
   rdfs:label "SAN ISIDRO" .
 
 # Tarifa del contrato de suministro
-&lt;http://vocab.linkeddata.es/datosabiertos/recurso/tarifaSuministro/tarifa_activa_general&gt;
+&lt;https://example.org/recurso/tarifaSuministro/tarifa_activa_general&gt;
   a edintsum:UtilityRate;
   dct:identifier "tarifa_activa_general";
   rdfs:label "Tarifa aplicada para el suministro de activeenergy. Referencia del grupo: Activa Interruptor Gral",
     "Tarifa de tipo: tarifa_activa_general" .
 
 # Unidad de medida
-&lt;http://vocab.linkeddata.es/datosabiertos/recurso/unidad/kWh&gt; a qudt:Unit;
+&lt;https://example.org/recurso/unidad/kWh&gt; a qudt:Unit;
   rdfs:label "kWh" .
 
 # Valor del consumo
-&lt;http://vocab.linkeddata.es/datosabiertos/recurso/valorSuministro/2258.0_2020_03_AMBIBAMMATUTE_General&gt;
+&lt;https://example.org/recurso/valorSuministro/2258.0_2020_03_AMBIBAMMATUTE_General&gt;
   a qudt:QuantityValue;
-  qudt:hasUnit &lt;http://vocab.linkeddata.es/datosabiertos/recurso/unidad/kWh&gt;;
+  qudt:hasUnit &lt;https://example.org/recurso/unidad/kWh&gt;;
   qudt:value "13099"^^xsd:float;
   rdfs:label "Cantidad consumida: 13099 kWh" .
 </textarea></pre>

@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/suministro#"
-     xml:base="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/suministro"
+<rdf:RDF xmlns="https://edint.es/def/suministro#"
+     xml:base="https://edint.es/def/suministro"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:mod="https://w3id.org/mod#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
@@ -13,8 +13,8 @@
      xmlns:vann="http://purl.org/vocab/vann/"
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:schema="http://schema.org/">
-    <owl:Ontology rdf:about="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/suministro">
-        <owl:versionIRI rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/suministro/0.1.0"/>
+    <owl:Ontology rdf:about="https://edint.es/def/suministro">
+        <owl:versionIRI rdf:resource="https://edint.es/def/suministro"/>
         <terms:created>2026-03-23</terms:created>
         <terms:creator>Daniel Doña</terms:creator>
         <terms:creator>Edna Ruckhaus</terms:creator>
@@ -23,12 +23,14 @@
         <terms:creator>Socorro Bernardos</terms:creator>
         <terms:description xml:lang="es">La ontología de suministros describe todos los conceptos relacionados con los servicios suministrados a los elementos de la infraestructura de un municipio y la medición de su consumo. Su alcance es el de suministros como electricidad, gas, agua, entre otros.</terms:description>
         <terms:description xml:lang="en">The Utilities ontology describes all concepts related to the utilities provided to a municipality&apos;s infrastructure elements and the measurement of their consumption. Its scope covers utilities such as electricity, gas, water, and others.</terms:description>
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-03-23</terms:issued>
         <terms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
         <terms:title xml:lang="es">Ontología de Suministros</terms:title>
         <terms:title xml:lang="en">The Utilities Ontology</terms:title>
         <vann:preferredNamespacePrefix>edintsum</vann:preferredNamespacePrefix>
-        <vann:preferredNamespaceUri rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/suministro#"/>
-        <owl:versionInfo>0.1.0</owl:versionInfo>
+        <vann:preferredNamespaceUri rdf:resource="https://edint.es/def/suministro#"/>
+        <owl:priorVersion rdf:resource="https://github.com/EDINT-Ontologia/edint-ontologia-suministro/releases/tag/v0.2.0"/>
+        <owl:versionInfo>0.2.1</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -91,6 +93,13 @@
 
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/source -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/source"/>
     
 
 
@@ -225,6 +234,13 @@
     
 
 
+    <!-- http://www.w3.org/2001/XMLSchema#date -->
+
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
+    
+
+
     <!-- http://www.w3.org/2001/XMLSchema#duration -->
 
 
@@ -306,100 +322,6 @@ Systems of units may distinguish between base and derived units.
         <rdfs:isDefinedBy rdf:resource="http://schema.org/"/>
         <rdfs:label xml:lang="es">fabricante</rdfs:label>
         <rdfs:label xml:lang="en">manufacturer</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/suministro#appliesTo -->
-
-
-    <owl:ObjectProperty rdf:about="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/suministro#appliesTo">
-        <rdfs:domain rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/suministro#UtilityContract"/>
-        <rdfs:range rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/suministro#UtilitySupplyPoint"/>
-        <rdfs:comment xml:lang="es">Relación entre el contrato de suministro y el punto de suministro de servicio al que se aplica.</rdfs:comment>
-        <rdfs:comment xml:lang="en">Relationship between the utility contract and the utillity supply point which it applies to.</rdfs:comment>
-        <rdfs:label xml:lang="es">aplicadoEn</rdfs:label>
-        <rdfs:label xml:lang="en">applies to</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/suministro#contractHolder -->
-
-
-    <owl:ObjectProperty rdf:about="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/suministro#contractHolder">
-        <rdfs:domain rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/suministro#UtilityContract"/>
-        <rdfs:range rdf:resource="https://schema.org/Organization"/>
-        <rdfs:comment xml:lang="es">Relación entre un contrato de suministro de servicio y la organización que es titular del contrato.</rdfs:comment>
-        <rdfs:comment xml:lang="en">Relationship between a utility contract and the organization that holds the contract.</rdfs:comment>
-        <rdfs:label xml:lang="en">contract holder</rdfs:label>
-        <rdfs:label xml:lang="es">titular contrato</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/suministro#hasMeterType -->
-
-
-    <owl:ObjectProperty rdf:about="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/suministro#hasMeterType">
-        <rdfs:domain rdf:resource="https://saref.etsi.org/core/Meter"/>
-        <rdfs:range>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
-                <owl:hasValue rdf:resource="http://vocab.linkeddata.es/datosabiertos/kos/edint/MeterType"/>
-            </owl:Restriction>
-        </rdfs:range>
-        <rdfs:comment xml:lang="es">Relación entre el Medidor y una taxonomía de tipos de medidores. Por ejemplo,  &quot;externo&quot;, &quot;procesado&quot;, &quot;telemedida&quot;.</rdfs:comment>
-        <rdfs:comment xml:lang="en">Relationship between the meter and a taxonomy of meter types. For example, &quot;external&quot;, &quot;processed&quot;, &quot;telemetry&quot;.</rdfs:comment>
-        <rdfs:label xml:lang="en">has meter type</rdfs:label>
-        <rdfs:label xml:lang="es">tiene tipo medidor</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/suministro#hasRate -->
-
-
-    <owl:ObjectProperty rdf:about="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/suministro#hasRate">
-        <rdfs:domain rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/suministro#UtilityContract"/>
-        <rdfs:range rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/suministro#UtilityRate"/>
-        <rdfs:comment xml:lang="es">Relación entre un contrato de suministro de un servicio y la tarifa que se aplica en dicho contrato.</rdfs:comment>
-        <rdfs:comment xml:lang="en">Relationship between a utility contracto and the rate that is applied in the contract.</rdfs:comment>
-        <rdfs:label xml:lang="en">has rate</rdfs:label>
-        <rdfs:label xml:lang="es">tiene tarifa</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/suministro#hasUtilitySupplyPoint -->
-
-
-    <owl:ObjectProperty rdf:about="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/suministro#hasUtilitySupplyPoint">
-        <rdfs:domain rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/infraestructura#InfrastructureElement"/>
-        <rdfs:range rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/suministro#UtilitySupplyPoint"/>
-        <rdfs:comment xml:lang="es">Relación entre un elemento de la infraestructura y un punto de suministro de servicio.</rdfs:comment>
-        <rdfs:comment xml:lang="en">Relationship between an infrastructure element and a utility supply point.</rdfs:comment>
-        <rdfs:label xml:lang="en">has utility supply point</rdfs:label>
-        <rdfs:label xml:lang="es">tiene punto de suministro de servicio</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/suministro#hasUtilityType -->
-
-
-    <owl:ObjectProperty rdf:about="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/suministro#hasUtilityType">
-        <rdfs:domain rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/suministro#UtilitySupplyPoint"/>
-        <rdfs:range>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
-                <owl:hasValue rdf:resource="http://vocab.linkeddata.es/datosabiertos/kos/edint/UtilityType"/>
-            </owl:Restriction>
-        </rdfs:range>
-        <rdfs:comment xml:lang="es">Tipo de suministro asociado a un punto de suministro de un servicio. Puede ser por ejemplo electricidad, aua, gas. Los tipos de suministro son conceptos definidos en una taxonomía (esquema de conceptos SKOS).</rdfs:comment>
-        <rdfs:comment xml:lang="en">Type of utility associated to a utility supply point. It can be for example eectricity, water, gas, etc.</rdfs:comment>
-        <rdfs:label xml:lang="en">has utility type</rdfs:label>
-        <rdfs:label xml:lang="es">tiene tipo  suministro</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -601,6 +523,100 @@ Systems of units may distinguish between base and derived units.
     
 
 
+    <!-- https://edint.es/def/suministro#appliesTo -->
+
+
+    <owl:ObjectProperty rdf:about="https://edint.es/def/suministro#appliesTo">
+        <rdfs:domain rdf:resource="https://edint.es/def/suministro#UtilityContract"/>
+        <rdfs:range rdf:resource="https://edint.es/def/suministro#UtilitySupplyPoint"/>
+        <rdfs:comment xml:lang="es">Relación entre el contrato de suministro y el punto de suministro de servicio al que se aplica.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Relationship between the utility contract and the utillity supply point which it applies to.</rdfs:comment>
+        <rdfs:label xml:lang="es">aplicadoEn</rdfs:label>
+        <rdfs:label xml:lang="en">applies to</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://edint.es/def/suministro#contractHolder -->
+
+
+    <owl:ObjectProperty rdf:about="https://edint.es/def/suministro#contractHolder">
+        <rdfs:domain rdf:resource="https://edint.es/def/suministro#UtilityContract"/>
+        <rdfs:range rdf:resource="https://schema.org/Organization"/>
+        <rdfs:comment xml:lang="es">Relación entre un contrato de suministro de servicio y la organización que es titular del contrato.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Relationship between a utility contract and the organization that holds the contract.</rdfs:comment>
+        <rdfs:label xml:lang="en">contract holder</rdfs:label>
+        <rdfs:label xml:lang="es">titular contrato</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://edint.es/def/suministro#hasMeterType -->
+
+
+    <owl:ObjectProperty rdf:about="https://edint.es/def/suministro#hasMeterType">
+        <rdfs:domain rdf:resource="https://saref.etsi.org/core/Meter"/>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
+                <owl:hasValue rdf:resource="https://edint.es/kos/MeterType"/>
+            </owl:Restriction>
+        </rdfs:range>
+        <rdfs:comment xml:lang="es">Relación entre el Medidor y una taxonomía de tipos de medidores. Por ejemplo,  &quot;externo&quot;, &quot;procesado&quot;, &quot;telemedida&quot;.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Relationship between the meter and a taxonomy of meter types. For example, &quot;external&quot;, &quot;processed&quot;, &quot;telemetry&quot;.</rdfs:comment>
+        <rdfs:label xml:lang="en">has meter type</rdfs:label>
+        <rdfs:label xml:lang="es">tiene tipo medidor</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://edint.es/def/suministro#hasRate -->
+
+
+    <owl:ObjectProperty rdf:about="https://edint.es/def/suministro#hasRate">
+        <rdfs:domain rdf:resource="https://edint.es/def/suministro#UtilityContract"/>
+        <rdfs:range rdf:resource="https://edint.es/def/suministro#UtilityRate"/>
+        <rdfs:comment xml:lang="es">Relación entre un contrato de suministro de un servicio y la tarifa que se aplica en dicho contrato.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Relationship between a utility contracto and the rate that is applied in the contract.</rdfs:comment>
+        <rdfs:label xml:lang="en">has rate</rdfs:label>
+        <rdfs:label xml:lang="es">tiene tarifa</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://edint.es/def/suministro#hasUtilitySupplyPoint -->
+
+
+    <owl:ObjectProperty rdf:about="https://edint.es/def/suministro#hasUtilitySupplyPoint">
+        <rdfs:domain rdf:resource="https://edint.es/def/infraestructura#InfrastructureElement"/>
+        <rdfs:range rdf:resource="https://edint.es/def/suministro#UtilitySupplyPoint"/>
+        <rdfs:comment xml:lang="es">Relación entre un elemento de la infraestructura y un punto de suministro de servicio.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Relationship between an infrastructure element and a utility supply point.</rdfs:comment>
+        <rdfs:label xml:lang="en">has utility supply point</rdfs:label>
+        <rdfs:label xml:lang="es">tiene punto de suministro de servicio</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://edint.es/def/suministro#hasUtilityType -->
+
+
+    <owl:ObjectProperty rdf:about="https://edint.es/def/suministro#hasUtilityType">
+        <rdfs:domain rdf:resource="https://edint.es/def/suministro#UtilitySupplyPoint"/>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
+                <owl:hasValue rdf:resource="https://edint.es/kos/UtilityType"/>
+            </owl:Restriction>
+        </rdfs:range>
+        <rdfs:comment xml:lang="es">Tipo de suministro asociado a un punto de suministro de un servicio. Puede ser por ejemplo electricidad, aua, gas. Los tipos de suministro son conceptos definidos en una taxonomía (esquema de conceptos SKOS).</rdfs:comment>
+        <rdfs:comment xml:lang="en">Type of utility associated to a utility supply point. It can be for example eectricity, water, gas, etc.</rdfs:comment>
+        <rdfs:label xml:lang="en">has utility type</rdfs:label>
+        <rdfs:label xml:lang="es">tiene tipo  suministro</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -732,7 +748,7 @@ Systems of units may distinguish between base and derived units.
     <owl:DatatypeProperty rdf:about="https://datos.ign.es/def/geo_core#xETRS89">
         <rdfs:domain rdf:resource="http://www.opengis.net/ont/sf#Point"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
-        <dc:source xml:lang="es">Catálogo de Objetos Geográficos BTN100.</dc:source>
+        <terms:source xml:lang="es">Catálogo de Objetos Geográficos BTN100.</terms:source>
         <rdfs:comment xml:lang="es">Coordenada X en metros (ETRS89)</rdfs:comment>
         <rdfs:comment xml:lang="en">X-Coordinate in meters (ETRS89)</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://datos.ign.es/def/geo_core#"/>
@@ -747,7 +763,7 @@ Systems of units may distinguish between base and derived units.
     <owl:DatatypeProperty rdf:about="https://datos.ign.es/def/geo_core#yETRS89">
         <rdfs:domain rdf:resource="http://www.opengis.net/ont/sf#Point"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
-        <dc:source xml:lang="es">Catálogo de Objetos Geográficos BTN100.</dc:source>
+        <terms:source xml:lang="es">Catálogo de Objetos Geográficos BTN100.</terms:source>
         <rdfs:comment xml:lang="es">Coordenada Y en metros (ETRS89)</rdfs:comment>
         <rdfs:comment xml:lang="en">Y-Coordinate in meters (ETRS89)</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://datos.ign.es/def/geo_core#"/>
@@ -812,18 +828,6 @@ Systems of units may distinguish between base and derived units.
   More formally, the value of a physical quantity Q with respect to a unit (U) is expressed as the scalar multiple of a real number (n) and U, as  Q = nU.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://qudt.org/schema/qudt"/>
         <rdfs:label xml:lang="en">Unit</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#EstacionBicicleta -->
-
-
-    <owl:Class rdf:about="http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#EstacionBicicleta">
-        <rdfs:subClassOf rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/infraestructura#Facility"/>
-        <rdfs:comment xml:lang="es">Lugar donde se puede tanto dejar como recoger las bicicletas. Está compuesto de anclajes</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica"/>
-        <rdfs:label xml:lang="es">Estación de bicicletas</rdfs:label>
     </owl:Class>
     
 
@@ -913,123 +917,6 @@ Su identificador, que se especifica con la propiedad dct:identifier, es el propo
 Su nombre, que se especifica con la propiedad dct:title, es el proporcionado por el Registro de Entidades Locales del Ministerio de Política Territorial, en http://www.ine.es/nomen2/index.do</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio"/>
         <rdfs:label>Provincia</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/aparcamiento#Parking -->
-
-
-    <owl:Class rdf:about="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/aparcamiento#Parking">
-        <rdfs:subClassOf rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/infraestructura#Facility"/>
-        <rdfs:comment xml:lang="es">Aparcamiento para diferentes tipos de vehículo que incluye instalaciones o superficies de aparcamiento fuera de la vía pública o zonas de aparcamiento en la vía pública para residentes, no residentes o libres.</rdfs:comment>
-        <rdfs:comment xml:lang="en">Parking for different types of vehicles, including off-street parking facilities or on-street parking zones for residents, non-residents, or free parking.</rdfs:comment>
-        <rdfs:label xml:lang="es">Aparcamiento</rdfs:label>
-        <rdfs:label xml:lang="en">Parking</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/infraestructura#Facility -->
-
-
-    <owl:Class rdf:about="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/infraestructura#Facility">
-        <rdfs:subClassOf rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/infraestructura#InfrastructureElement"/>
-        <rdfs:comment xml:lang="es">Hace referencia a edificios de servicios (públicos o privados), zonas de ocio, zonas comerciales o cualquier otro elemento  que afecte directamente a la movilidad, actuando como un foco de atracción de personas o vehículos.</rdfs:comment>
-        <rdfs:comment xml:lang="en">It refers to service buildings (public or private), leisure areas, commercial areas or any other element that directly affects mobility, acting as a focus of attraction for persons or vehicles.</rdfs:comment>
-        <rdfs:label xml:lang="es">Equipamiento</rdfs:label>
-        <rdfs:label xml:lang="en">Facility</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/infraestructura#InfrastructureElement -->
-
-
-    <owl:Class rdf:about="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/infraestructura#InfrastructureElement">
-        <rdfs:subClassOf rdf:resource="http://www.opengis.net/ont/geosparql#Feature"/>
-        <rdfs:comment xml:lang="es">Representa el conjunto de todos los elementos de la infraestructura que generan movilidad y elementos urbanos tales como semáforos, señales viales, pilonas, etc.</rdfs:comment>
-        <rdfs:comment xml:lang="en">Represents the set of all infrastructure elements that generate mobility and urban elements such as traffic lights, road signs, bollards, etc.</rdfs:comment>
-        <rdfs:label xml:lang="es">Elemento de la infraestructura</rdfs:label>
-        <rdfs:label xml:lang="en">Infrastructure element</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/infraestructura#UrbanElement -->
-
-
-    <owl:Class rdf:about="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/infraestructura#UrbanElement">
-        <rdfs:subClassOf rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/infraestructura#InfrastructureElement"/>
-        <rdfs:comment xml:lang="es">Comprende el inventario de elementos urbanos tales como señales viales, semáforos, pilonas, etc.</rdfs:comment>
-        <rdfs:comment xml:lang="en">It includes the inventory of urban elements such as road signs, traffic lights, bollards, etc.</rdfs:comment>
-        <rdfs:label xml:lang="es">Elemento urbano</rdfs:label>
-        <rdfs:label xml:lang="en">Urban element</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/suministro#UtilityConsumption -->
-
-
-    <owl:Class rdf:about="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/suministro#UtilityConsumption">
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/Observation"/>
-        <rdfs:comment xml:lang="en">Amount of utility consumed over a specific period.</rdfs:comment>
-        <rdfs:comment xml:lang="es">Cantidad de suministro consumido durante un período específico.</rdfs:comment>
-        <rdfs:label xml:lang="es">Consumo suministro</rdfs:label>
-        <rdfs:label xml:lang="en">Utility consumption</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/suministro#UtilityContract -->
-
-
-    <owl:Class rdf:about="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/suministro#UtilityContract">
-        <rdfs:comment xml:lang="es">Acuerdo entre un proveedor de suministros y un consumidor que define los términos, tarifas, calidad del suministro y responsabilidades para la prestación de suministros esenciales como electricidad, agua, gas, etc.</rdfs:comment>
-        <rdfs:comment xml:lang="en">Agreement between a utility provider and a consumer that defines the terms, rates, service quality, and responsibilities for providing essential utilities like electricity, water, gas, etc.</rdfs:comment>
-        <rdfs:label xml:lang="es">Contrato suministro</rdfs:label>
-        <rdfs:label xml:lang="en">Utility contract</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/suministro#UtilityMeter -->
-
-
-    <owl:Class rdf:about="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/suministro#UtilityMeter">
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/Sensor"/>
-        <rdfs:subClassOf rdf:resource="https://saref.etsi.org/core/Meter"/>
-        <rdfs:comment xml:lang="en">Device that measures the consumption of a utility, for example electricity, gas, water, or heating.</rdfs:comment>
-        <rdfs:comment xml:lang="es">Dispositivo que mide el consumo de un suministro, por ejemplo, electricidad, gas, agua o calefacción.</rdfs:comment>
-        <rdfs:label xml:lang="es">Medidor suministro</rdfs:label>
-        <rdfs:label xml:lang="en">Utility meter</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/suministro#UtilityRate -->
-
-
-    <owl:Class rdf:about="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/suministro#UtilityRate">
-        <rdfs:label xml:lang="en">A utility rate is the specific price structure or tariff charged by a service provider for a unit of consumption of a utility, such as kilowatt-hours of electricity or cubic meters of water.</rdfs:label>
-        <rdfs:label xml:lang="es">La tarifa de un suministro es la estructura de precios o tarifa específica que cobra un proveedor de suministros por una unidad de consumo de un suministro, como kilovatios-hora de electricidad o metros cúbicos de agua.</rdfs:label>
-        <rdfs:label xml:lang="es">Tarifa suministro</rdfs:label>
-        <rdfs:label xml:lang="en">Utility rate</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/suministro#UtilitySupplyPoint -->
-
-
-    <owl:Class rdf:about="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/suministro#UtilitySupplyPoint">
-        <rdfs:subClassOf rdf:resource="http://www.opengis.net/ont/geosparql#Feature"/>
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/FeatureOfInterest"/>
-        <rdfs:comment xml:lang="en">Point of the infrastructure element where a utility is supplied. Generally associated with a utility meter (sensor).</rdfs:comment>
-        <rdfs:comment xml:lang="es">Punto en donde se realiza el suministro de un servicio para un elemento de la infraestructura municipal. Asociado en general a un medidor (sensor).</rdfs:comment>
-        <rdfs:label xml:lang="es">Punto de suministro de servicio</rdfs:label>
-        <rdfs:label xml:lang="en">Utility supply point</rdfs:label>
     </owl:Class>
     
 
@@ -1193,6 +1080,110 @@ Su nombre, que se especifica con la propiedad dct:title, es el proporcionado por
     
 
 
+    <!-- https://edint.es/def/infraestructura#Facility -->
+
+
+    <owl:Class rdf:about="https://edint.es/def/infraestructura#Facility">
+        <rdfs:subClassOf rdf:resource="https://edint.es/def/infraestructura#InfrastructureElement"/>
+        <rdfs:comment xml:lang="es">Hace referencia a edificios de servicios (públicos o privados), zonas de ocio, zonas comerciales o cualquier otro elemento  que afecte directamente a la movilidad, actuando como un foco de atracción de personas o vehículos.</rdfs:comment>
+        <rdfs:comment xml:lang="en">It refers to service buildings (public or private), leisure areas, commercial areas or any other element that directly affects mobility, acting as a focus of attraction for persons or vehicles.</rdfs:comment>
+        <rdfs:label xml:lang="es">Equipamiento</rdfs:label>
+        <rdfs:label xml:lang="en">Facility</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://edint.es/def/infraestructura#InfrastructureElement -->
+
+
+    <owl:Class rdf:about="https://edint.es/def/infraestructura#InfrastructureElement">
+        <rdfs:subClassOf rdf:resource="http://www.opengis.net/ont/geosparql#Feature"/>
+        <rdfs:comment xml:lang="es">Representa el conjunto de todos los elementos de la infraestructura que generan movilidad y elementos urbanos tales como semáforos, señales viales, pilonas, etc.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Represents the set of all infrastructure elements that generate mobility and urban elements such as traffic lights, road signs, bollards, etc.</rdfs:comment>
+        <rdfs:label xml:lang="es">Elemento de la infraestructura</rdfs:label>
+        <rdfs:label xml:lang="en">Infrastructure element</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://edint.es/def/infraestructura#UrbanElement -->
+
+
+    <owl:Class rdf:about="https://edint.es/def/infraestructura#UrbanElement">
+        <rdfs:subClassOf rdf:resource="https://edint.es/def/infraestructura#InfrastructureElement"/>
+        <rdfs:comment xml:lang="es">Comprende el inventario de elementos urbanos tales como señales viales, semáforos, pilonas, etc.</rdfs:comment>
+        <rdfs:comment xml:lang="en">It includes the inventory of urban elements such as road signs, traffic lights, bollards, etc.</rdfs:comment>
+        <rdfs:label xml:lang="es">Elemento urbano</rdfs:label>
+        <rdfs:label xml:lang="en">Urban element</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://edint.es/def/suministro#UtilityConsumption -->
+
+
+    <owl:Class rdf:about="https://edint.es/def/suministro#UtilityConsumption">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/Observation"/>
+        <rdfs:comment xml:lang="en">Amount of utility consumed over a specific period.</rdfs:comment>
+        <rdfs:comment xml:lang="es">Cantidad de suministro consumido durante un período específico.</rdfs:comment>
+        <rdfs:label xml:lang="es">Consumo suministro</rdfs:label>
+        <rdfs:label xml:lang="en">Utility consumption</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://edint.es/def/suministro#UtilityContract -->
+
+
+    <owl:Class rdf:about="https://edint.es/def/suministro#UtilityContract">
+        <rdfs:comment xml:lang="es">Acuerdo entre un proveedor de suministros y un consumidor que define los términos, tarifas, calidad del suministro y responsabilidades para la prestación de suministros esenciales como electricidad, agua, gas, etc.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Agreement between a utility provider and a consumer that defines the terms, rates, service quality, and responsibilities for providing essential utilities like electricity, water, gas, etc.</rdfs:comment>
+        <rdfs:label xml:lang="es">Contrato suministro</rdfs:label>
+        <rdfs:label xml:lang="en">Utility contract</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://edint.es/def/suministro#UtilityMeter -->
+
+
+    <owl:Class rdf:about="https://edint.es/def/suministro#UtilityMeter">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/Sensor"/>
+        <rdfs:subClassOf rdf:resource="https://saref.etsi.org/core/Meter"/>
+        <rdfs:comment xml:lang="en">Device that measures the consumption of a utility, for example electricity, gas, water, or heating.</rdfs:comment>
+        <rdfs:comment xml:lang="es">Dispositivo que mide el consumo de un suministro, por ejemplo, electricidad, gas, agua o calefacción.</rdfs:comment>
+        <rdfs:label xml:lang="es">Medidor suministro</rdfs:label>
+        <rdfs:label xml:lang="en">Utility meter</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://edint.es/def/suministro#UtilityRate -->
+
+
+    <owl:Class rdf:about="https://edint.es/def/suministro#UtilityRate">
+        <rdfs:label xml:lang="en">A utility rate is the specific price structure or tariff charged by a service provider for a unit of consumption of a utility, such as kilowatt-hours of electricity or cubic meters of water.</rdfs:label>
+        <rdfs:label xml:lang="es">La tarifa de un suministro es la estructura de precios o tarifa específica que cobra un proveedor de suministros por una unidad de consumo de un suministro, como kilovatios-hora de electricidad o metros cúbicos de agua.</rdfs:label>
+        <rdfs:label xml:lang="es">Tarifa suministro</rdfs:label>
+        <rdfs:label xml:lang="en">Utility rate</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://edint.es/def/suministro#UtilitySupplyPoint -->
+
+
+    <owl:Class rdf:about="https://edint.es/def/suministro#UtilitySupplyPoint">
+        <rdfs:subClassOf rdf:resource="http://www.opengis.net/ont/geosparql#Feature"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/FeatureOfInterest"/>
+        <rdfs:comment xml:lang="en">Point of the infrastructure element where a utility is supplied. Generally associated with a utility meter (sensor).</rdfs:comment>
+        <rdfs:comment xml:lang="es">Punto en donde se realiza el suministro de un servicio para un elemento de la infraestructura municipal. Asociado en general a un medidor (sensor).</rdfs:comment>
+        <rdfs:label xml:lang="es">Punto de suministro de servicio</rdfs:label>
+        <rdfs:label xml:lang="en">Utility supply point</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://saref.etsi.org/core/Device -->
 
 
@@ -1237,10 +1228,10 @@ Su nombre, que se especifica con la propiedad dct:title, es el proporcionado por
     
 
 
-    <!-- http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/suministro#electricityConsumption -->
+    <!-- https://edint.es/def/suministro#electricityConsumption -->
 
 
-    <owl:NamedIndividual rdf:about="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/suministro#electricityConsumption">
+    <owl:NamedIndividual rdf:about="https://edint.es/def/suministro#electricityConsumption">
         <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
         <rdfs:label xml:lang="es">consumo de electricidad</rdfs:label>
         <rdfs:label xml:lang="en">electricity consumption</rdfs:label>
@@ -1248,10 +1239,10 @@ Su nombre, que se especifica con la propiedad dct:title, es el proporcionado por
     
 
 
-    <!-- http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/suministro#gasConsumption -->
+    <!-- https://edint.es/def/suministro#gasConsumption -->
 
 
-    <owl:NamedIndividual rdf:about="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/suministro#gasConsumption">
+    <owl:NamedIndividual rdf:about="https://edint.es/def/suministro#gasConsumption">
         <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
         <rdfs:label xml:lang="es">consumo de gas</rdfs:label>
         <rdfs:label xml:lang="en">gas consumption</rdfs:label>
@@ -1259,10 +1250,10 @@ Su nombre, que se especifica con la propiedad dct:title, es el proporcionado por
     
 
 
-    <!-- http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/suministro#waterConsumption -->
+    <!-- https://edint.es/def/suministro#waterConsumption -->
 
 
-    <owl:NamedIndividual rdf:about="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/suministro#waterConsumption">
+    <owl:NamedIndividual rdf:about="https://edint.es/def/suministro#waterConsumption">
         <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
         <rdfs:label xml:lang="es">consumo de agua</rdfs:label>
         <rdfs:label xml:lang="en">water consumption</rdfs:label>
@@ -1270,19 +1261,19 @@ Su nombre, que se especifica con la propiedad dct:title, es el proporcionado por
     
 
 
-    <!-- http://vocab.linkeddata.es/datosabiertos/kos/edint/MeterType -->
+    <!-- https://edint.es/kos/MeterType -->
 
 
-    <owl:NamedIndividual rdf:about="http://vocab.linkeddata.es/datosabiertos/kos/edint/MeterType">
+    <owl:NamedIndividual rdf:about="https://edint.es/kos/MeterType">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://vocab.linkeddata.es/datosabiertos/kos/edint/UtilityType -->
+    <!-- https://edint.es/kos/UtilityType -->
 
 
-    <owl:NamedIndividual rdf:about="http://vocab.linkeddata.es/datosabiertos/kos/edint/UtilityType">
+    <owl:NamedIndividual rdf:about="https://edint.es/kos/UtilityType">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
     </owl:NamedIndividual>
 </rdf:RDF>

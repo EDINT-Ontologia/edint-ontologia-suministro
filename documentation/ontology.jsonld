@@ -2,7 +2,7 @@
   "@id" : "_:genid1",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#hasValue" : [ {
-    "@id" : "http://vocab.linkeddata.es/datosabiertos/kos/edint/MeterType"
+    "@id" : "https://edint.es/kos/MeterType"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://www.w3.org/2004/02/skos/core#inScheme"
@@ -11,7 +11,7 @@
   "@id" : "_:genid2",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#hasValue" : [ {
-    "@id" : "http://vocab.linkeddata.es/datosabiertos/kos/edint/UtilityType"
+    "@id" : "https://edint.es/kos/UtilityType"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://www.w3.org/2004/02/skos/core#inScheme"
@@ -79,6 +79,9 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://purl.org/dc/terms/license",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/source",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://purl.org/dc/terms/title",
@@ -222,23 +225,6 @@
   "@id" : "http://schema.org/rangeIncludes",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
-  "@id" : "http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica#EstacionBicicleta",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "es",
-    "@value" : "Lugar donde se puede tanto dejar como recoger las bicicletas. Está compuesto de anclajes"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "http://vocab.ciudadesabiertas.es/def/transporte/bicicleta-publica"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "es",
-    "@value" : "Estación de bicicletas"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/infraestructura#Facility"
-  } ]
-}, {
   "@id" : "http://vocab.ciudadesabiertas.es/def/transporte/trafico#Tramo",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -362,418 +348,6 @@
     "@id" : "http://www.opengis.net/ont/geosparql#Feature"
   } ]
 }, {
-  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/aparcamiento#Parking",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "es",
-    "@value" : "Aparcamiento para diferentes tipos de vehículo que incluye instalaciones o superficies de aparcamiento fuera de la vía pública o zonas de aparcamiento en la vía pública para residentes, no residentes o libres."
-  }, {
-    "@language" : "en",
-    "@value" : "Parking for different types of vehicles, including off-street parking facilities or on-street parking zones for residents, non-residents, or free parking."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "es",
-    "@value" : "Aparcamiento"
-  }, {
-    "@language" : "en",
-    "@value" : "Parking"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/infraestructura#Facility"
-  } ]
-}, {
-  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/infraestructura#Facility",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "es",
-    "@value" : "Hace referencia a edificios de servicios (públicos o privados), zonas de ocio, zonas comerciales o cualquier otro elemento  que afecte directamente a la movilidad, actuando como un foco de atracción de personas o vehículos."
-  }, {
-    "@language" : "en",
-    "@value" : "It refers to service buildings (public or private), leisure areas, commercial areas or any other element that directly affects mobility, acting as a focus of attraction for persons or vehicles."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "es",
-    "@value" : "Equipamiento"
-  }, {
-    "@language" : "en",
-    "@value" : "Facility"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/infraestructura#InfrastructureElement"
-  } ]
-}, {
-  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/infraestructura#InfrastructureElement",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "es",
-    "@value" : "Representa el conjunto de todos los elementos de la infraestructura que generan movilidad y elementos urbanos tales como semáforos, señales viales, pilonas, etc."
-  }, {
-    "@language" : "en",
-    "@value" : "Represents the set of all infrastructure elements that generate mobility and urban elements such as traffic lights, road signs, bollards, etc."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "es",
-    "@value" : "Elemento de la infraestructura"
-  }, {
-    "@language" : "en",
-    "@value" : "Infrastructure element"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.opengis.net/ont/geosparql#Feature"
-  } ]
-}, {
-  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/infraestructura#UrbanElement",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "es",
-    "@value" : "Comprende el inventario de elementos urbanos tales como señales viales, semáforos, pilonas, etc."
-  }, {
-    "@language" : "en",
-    "@value" : "It includes the inventory of urban elements such as road signs, traffic lights, bollards, etc."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "es",
-    "@value" : "Elemento urbano"
-  }, {
-    "@language" : "en",
-    "@value" : "Urban element"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/infraestructura#InfrastructureElement"
-  } ]
-}, {
-  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/suministro",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
-  "http://purl.org/dc/terms/created" : [ {
-    "@value" : "2026-03-23"
-  } ],
-  "http://purl.org/dc/terms/creator" : [ {
-    "@value" : "Daniel Doña"
-  }, {
-    "@value" : "Edna Ruckhaus"
-  }, {
-    "@value" : "Lucía Sánchez"
-  }, {
-    "@value" : "Oscar Corcho"
-  }, {
-    "@value" : "Socorro Bernardos"
-  } ],
-  "http://purl.org/dc/terms/description" : [ {
-    "@language" : "es",
-    "@value" : "La ontología de suministros describe todos los conceptos relacionados con los servicios suministrados a los elementos de la infraestructura de un municipio y la medición de su consumo. Su alcance es el de suministros como electricidad, gas, agua, entre otros."
-  }, {
-    "@language" : "en",
-    "@value" : "The Utilities ontology describes all concepts related to the utilities provided to a municipality's infrastructure elements and the measurement of their consumption. Its scope covers utilities such as electricity, gas, water, and others."
-  } ],
-  "http://purl.org/dc/terms/license" : [ {
-    "@id" : "https://creativecommons.org/licenses/by/4.0/"
-  } ],
-  "http://purl.org/dc/terms/title" : [ {
-    "@language" : "es",
-    "@value" : "Ontología de Suministros"
-  }, {
-    "@language" : "en",
-    "@value" : "The Utilities Ontology"
-  } ],
-  "http://purl.org/vocab/vann/preferredNamespacePrefix" : [ {
-    "@value" : "edintsum"
-  } ],
-  "http://purl.org/vocab/vann/preferredNamespaceUri" : [ {
-    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/suministro#"
-  } ],
-  "http://www.w3.org/2002/07/owl#versionIRI" : [ {
-    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/suministro/0.1.0"
-  } ],
-  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
-    "@value" : "0.1.0"
-  } ]
-}, {
-  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/suministro#UtilityConsumption",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "Amount of utility consumed over a specific period."
-  }, {
-    "@language" : "es",
-    "@value" : "Cantidad de suministro consumido durante un período específico."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "es",
-    "@value" : "Consumo suministro"
-  }, {
-    "@language" : "en",
-    "@value" : "Utility consumption"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.w3.org/ns/sosa/Observation"
-  } ]
-}, {
-  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/suministro#UtilityContract",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "es",
-    "@value" : "Acuerdo entre un proveedor de suministros y un consumidor que define los términos, tarifas, calidad del suministro y responsabilidades para la prestación de suministros esenciales como electricidad, agua, gas, etc."
-  }, {
-    "@language" : "en",
-    "@value" : "Agreement between a utility provider and a consumer that defines the terms, rates, service quality, and responsibilities for providing essential utilities like electricity, water, gas, etc."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "es",
-    "@value" : "Contrato suministro"
-  }, {
-    "@language" : "en",
-    "@value" : "Utility contract"
-  } ]
-}, {
-  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/suministro#UtilityMeter",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "Device that measures the consumption of a utility, for example electricity, gas, water, or heating."
-  }, {
-    "@language" : "es",
-    "@value" : "Dispositivo que mide el consumo de un suministro, por ejemplo, electricidad, gas, agua o calefacción."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "es",
-    "@value" : "Medidor suministro"
-  }, {
-    "@language" : "en",
-    "@value" : "Utility meter"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.w3.org/ns/sosa/Sensor"
-  }, {
-    "@id" : "https://saref.etsi.org/core/Meter"
-  } ]
-}, {
-  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/suministro#UtilityRate",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "A utility rate is the specific price structure or tariff charged by a service provider for a unit of consumption of a utility, such as kilowatt-hours of electricity or cubic meters of water."
-  }, {
-    "@language" : "es",
-    "@value" : "La tarifa de un suministro es la estructura de precios o tarifa específica que cobra un proveedor de suministros por una unidad de consumo de un suministro, como kilovatios-hora de electricidad o metros cúbicos de agua."
-  }, {
-    "@language" : "es",
-    "@value" : "Tarifa suministro"
-  }, {
-    "@language" : "en",
-    "@value" : "Utility rate"
-  } ]
-}, {
-  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/suministro#UtilitySupplyPoint",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "Point of the infrastructure element where a utility is supplied. Generally associated with a utility meter (sensor)."
-  }, {
-    "@language" : "es",
-    "@value" : "Punto en donde se realiza el suministro de un servicio para un elemento de la infraestructura municipal. Asociado en general a un medidor (sensor)."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "es",
-    "@value" : "Punto de suministro de servicio"
-  }, {
-    "@language" : "en",
-    "@value" : "Utility supply point"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.opengis.net/ont/geosparql#Feature"
-  }, {
-    "@id" : "http://www.w3.org/ns/sosa/FeatureOfInterest"
-  } ]
-}, {
-  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/suministro#appliesTo",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "es",
-    "@value" : "Relación entre el contrato de suministro y el punto de suministro de servicio al que se aplica."
-  }, {
-    "@language" : "en",
-    "@value" : "Relationship between the utility contract and the utillity supply point which it applies to."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/suministro#UtilityContract"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "es",
-    "@value" : "aplicadoEn"
-  }, {
-    "@language" : "en",
-    "@value" : "applies to"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/suministro#UtilitySupplyPoint"
-  } ]
-}, {
-  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/suministro#contractHolder",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "es",
-    "@value" : "Relación entre un contrato de suministro de servicio y la organización que es titular del contrato."
-  }, {
-    "@language" : "en",
-    "@value" : "Relationship between a utility contract and the organization that holds the contract."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/suministro#UtilityContract"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "contract holder"
-  }, {
-    "@language" : "es",
-    "@value" : "titular contrato"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://schema.org/Organization"
-  } ]
-}, {
-  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/suministro#electricityConsumption",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "http://www.w3.org/ns/sosa/ObservableProperty"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "es",
-    "@value" : "consumo de electricidad"
-  }, {
-    "@language" : "en",
-    "@value" : "electricity consumption"
-  } ]
-}, {
-  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/suministro#gasConsumption",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "http://www.w3.org/ns/sosa/ObservableProperty"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "es",
-    "@value" : "consumo de gas"
-  }, {
-    "@language" : "en",
-    "@value" : "gas consumption"
-  } ]
-}, {
-  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/suministro#hasMeterType",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "es",
-    "@value" : "Relación entre el Medidor y una taxonomía de tipos de medidores. Por ejemplo,  \"externo\", \"procesado\", \"telemedida\"."
-  }, {
-    "@language" : "en",
-    "@value" : "Relationship between the meter and a taxonomy of meter types. For example, \"external\", \"processed\", \"telemetry\"."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://saref.etsi.org/core/Meter"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "has meter type"
-  }, {
-    "@language" : "es",
-    "@value" : "tiene tipo medidor"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "_:genid1"
-  } ]
-}, {
-  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/suministro#hasRate",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "es",
-    "@value" : "Relación entre un contrato de suministro de un servicio y la tarifa que se aplica en dicho contrato."
-  }, {
-    "@language" : "en",
-    "@value" : "Relationship between a utility contracto and the rate that is applied in the contract."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/suministro#UtilityContract"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "has rate"
-  }, {
-    "@language" : "es",
-    "@value" : "tiene tarifa"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/suministro#UtilityRate"
-  } ]
-}, {
-  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/suministro#hasUtilitySupplyPoint",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "es",
-    "@value" : "Relación entre un elemento de la infraestructura y un punto de suministro de servicio."
-  }, {
-    "@language" : "en",
-    "@value" : "Relationship between an infrastructure element and a utility supply point."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/infraestructura#InfrastructureElement"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "has utility supply point"
-  }, {
-    "@language" : "es",
-    "@value" : "tiene punto de suministro de servicio"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/suministro#UtilitySupplyPoint"
-  } ]
-}, {
-  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/suministro#hasUtilityType",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "es",
-    "@value" : "Tipo de suministro asociado a un punto de suministro de un servicio. Puede ser por ejemplo electricidad, aua, gas. Los tipos de suministro son conceptos definidos en una taxonomía (esquema de conceptos SKOS)."
-  }, {
-    "@language" : "en",
-    "@value" : "Type of utility associated to a utility supply point. It can be for example eectricity, water, gas, etc."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/suministro#UtilitySupplyPoint"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "has utility type"
-  }, {
-    "@language" : "es",
-    "@value" : "tiene tipo  suministro"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "_:genid2"
-  } ]
-}, {
-  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/suministro#waterConsumption",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "http://www.w3.org/ns/sosa/ObservableProperty"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "es",
-    "@value" : "consumo de agua"
-  }, {
-    "@language" : "en",
-    "@value" : "water consumption"
-  } ]
-}, {
-  "@id" : "http://vocab.linkeddata.es/datosabiertos/kos/edint/MeterType",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "http://www.w3.org/2004/02/skos/core#ConceptScheme"
-  } ]
-}, {
-  "@id" : "http://vocab.linkeddata.es/datosabiertos/kos/edint/UtilityType",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "http://www.w3.org/2004/02/skos/core#ConceptScheme"
-  } ]
-}, {
   "@id" : "http://www.opengis.net/ont/geosparql#Feature",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -838,6 +412,9 @@
   "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ]
 }, {
   "@id" : "http://www.w3.org/2001/XMLSchema#anySimpleType",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ]
+}, {
+  "@id" : "http://www.w3.org/2001/XMLSchema#date",
   "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ]
 }, {
   "@id" : "http://www.w3.org/2001/XMLSchema#duration",
@@ -1506,7 +1083,7 @@
 }, {
   "@id" : "https://datos.ign.es/def/geo_core#xETRS89",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://purl.org/dc/elements/1.1/source" : [ {
+  "http://purl.org/dc/terms/source" : [ {
     "@language" : "es",
     "@value" : "Catálogo de Objetos Geográficos BTN100."
   } ],
@@ -1532,7 +1109,7 @@
 }, {
   "@id" : "https://datos.ign.es/def/geo_core#yETRS89",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://purl.org/dc/elements/1.1/source" : [ {
+  "http://purl.org/dc/terms/source" : [ {
     "@language" : "es",
     "@value" : "Catálogo de Objetos Geográficos BTN100."
   } ],
@@ -1554,6 +1131,405 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#float"
+  } ]
+}, {
+  "@id" : "https://edint.es/def/infraestructura#Facility",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Hace referencia a edificios de servicios (públicos o privados), zonas de ocio, zonas comerciales o cualquier otro elemento  que afecte directamente a la movilidad, actuando como un foco de atracción de personas o vehículos."
+  }, {
+    "@language" : "en",
+    "@value" : "It refers to service buildings (public or private), leisure areas, commercial areas or any other element that directly affects mobility, acting as a focus of attraction for persons or vehicles."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Equipamiento"
+  }, {
+    "@language" : "en",
+    "@value" : "Facility"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://edint.es/def/infraestructura#InfrastructureElement"
+  } ]
+}, {
+  "@id" : "https://edint.es/def/infraestructura#InfrastructureElement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Representa el conjunto de todos los elementos de la infraestructura que generan movilidad y elementos urbanos tales como semáforos, señales viales, pilonas, etc."
+  }, {
+    "@language" : "en",
+    "@value" : "Represents the set of all infrastructure elements that generate mobility and urban elements such as traffic lights, road signs, bollards, etc."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Elemento de la infraestructura"
+  }, {
+    "@language" : "en",
+    "@value" : "Infrastructure element"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.opengis.net/ont/geosparql#Feature"
+  } ]
+}, {
+  "@id" : "https://edint.es/def/infraestructura#UrbanElement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Comprende el inventario de elementos urbanos tales como señales viales, semáforos, pilonas, etc."
+  }, {
+    "@language" : "en",
+    "@value" : "It includes the inventory of urban elements such as road signs, traffic lights, bollards, etc."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Elemento urbano"
+  }, {
+    "@language" : "en",
+    "@value" : "Urban element"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://edint.es/def/infraestructura#InfrastructureElement"
+  } ]
+}, {
+  "@id" : "https://edint.es/def/suministro",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://purl.org/dc/terms/created" : [ {
+    "@value" : "2026-03-23"
+  } ],
+  "http://purl.org/dc/terms/creator" : [ {
+    "@value" : "Daniel Doña"
+  }, {
+    "@value" : "Edna Ruckhaus"
+  }, {
+    "@value" : "Lucía Sánchez"
+  }, {
+    "@value" : "Oscar Corcho"
+  }, {
+    "@value" : "Socorro Bernardos"
+  } ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "es",
+    "@value" : "La ontología de suministros describe todos los conceptos relacionados con los servicios suministrados a los elementos de la infraestructura de un municipio y la medición de su consumo. Su alcance es el de suministros como electricidad, gas, agua, entre otros."
+  }, {
+    "@language" : "en",
+    "@value" : "The Utilities ontology describes all concepts related to the utilities provided to a municipality's infrastructure elements and the measurement of their consumption. Its scope covers utilities such as electricity, gas, water, and others."
+  } ],
+  "http://purl.org/dc/terms/issued" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2026-03-23"
+  } ],
+  "http://purl.org/dc/terms/license" : [ {
+    "@id" : "https://creativecommons.org/licenses/by/4.0/"
+  } ],
+  "http://purl.org/dc/terms/title" : [ {
+    "@language" : "es",
+    "@value" : "Ontología de Suministros"
+  }, {
+    "@language" : "en",
+    "@value" : "The Utilities Ontology"
+  } ],
+  "http://purl.org/vocab/vann/preferredNamespacePrefix" : [ {
+    "@value" : "edintsum"
+  } ],
+  "http://purl.org/vocab/vann/preferredNamespaceUri" : [ {
+    "@id" : "https://edint.es/def/suministro#"
+  } ],
+  "http://www.w3.org/2002/07/owl#priorVersion" : [ {
+    "@id" : "https://github.com/EDINT-Ontologia/edint-ontologia-suministro/releases/tag/v0.2.0"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionIRI" : [ {
+    "@id" : "https://edint.es/def/suministro"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@value" : "0.2.1"
+  } ]
+}, {
+  "@id" : "https://edint.es/def/suministro#UtilityConsumption",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Amount of utility consumed over a specific period."
+  }, {
+    "@language" : "es",
+    "@value" : "Cantidad de suministro consumido durante un período específico."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Consumo suministro"
+  }, {
+    "@language" : "en",
+    "@value" : "Utility consumption"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/ns/sosa/Observation"
+  } ]
+}, {
+  "@id" : "https://edint.es/def/suministro#UtilityContract",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Acuerdo entre un proveedor de suministros y un consumidor que define los términos, tarifas, calidad del suministro y responsabilidades para la prestación de suministros esenciales como electricidad, agua, gas, etc."
+  }, {
+    "@language" : "en",
+    "@value" : "Agreement between a utility provider and a consumer that defines the terms, rates, service quality, and responsibilities for providing essential utilities like electricity, water, gas, etc."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Contrato suministro"
+  }, {
+    "@language" : "en",
+    "@value" : "Utility contract"
+  } ]
+}, {
+  "@id" : "https://edint.es/def/suministro#UtilityMeter",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Device that measures the consumption of a utility, for example electricity, gas, water, or heating."
+  }, {
+    "@language" : "es",
+    "@value" : "Dispositivo que mide el consumo de un suministro, por ejemplo, electricidad, gas, agua o calefacción."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Medidor suministro"
+  }, {
+    "@language" : "en",
+    "@value" : "Utility meter"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/ns/sosa/Sensor"
+  }, {
+    "@id" : "https://saref.etsi.org/core/Meter"
+  } ]
+}, {
+  "@id" : "https://edint.es/def/suministro#UtilityRate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "A utility rate is the specific price structure or tariff charged by a service provider for a unit of consumption of a utility, such as kilowatt-hours of electricity or cubic meters of water."
+  }, {
+    "@language" : "es",
+    "@value" : "La tarifa de un suministro es la estructura de precios o tarifa específica que cobra un proveedor de suministros por una unidad de consumo de un suministro, como kilovatios-hora de electricidad o metros cúbicos de agua."
+  }, {
+    "@language" : "es",
+    "@value" : "Tarifa suministro"
+  }, {
+    "@language" : "en",
+    "@value" : "Utility rate"
+  } ]
+}, {
+  "@id" : "https://edint.es/def/suministro#UtilitySupplyPoint",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Point of the infrastructure element where a utility is supplied. Generally associated with a utility meter (sensor)."
+  }, {
+    "@language" : "es",
+    "@value" : "Punto en donde se realiza el suministro de un servicio para un elemento de la infraestructura municipal. Asociado en general a un medidor (sensor)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Punto de suministro de servicio"
+  }, {
+    "@language" : "en",
+    "@value" : "Utility supply point"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.opengis.net/ont/geosparql#Feature"
+  }, {
+    "@id" : "http://www.w3.org/ns/sosa/FeatureOfInterest"
+  } ]
+}, {
+  "@id" : "https://edint.es/def/suministro#appliesTo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Relación entre el contrato de suministro y el punto de suministro de servicio al que se aplica."
+  }, {
+    "@language" : "en",
+    "@value" : "Relationship between the utility contract and the utillity supply point which it applies to."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://edint.es/def/suministro#UtilityContract"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "aplicadoEn"
+  }, {
+    "@language" : "en",
+    "@value" : "applies to"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://edint.es/def/suministro#UtilitySupplyPoint"
+  } ]
+}, {
+  "@id" : "https://edint.es/def/suministro#contractHolder",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Relación entre un contrato de suministro de servicio y la organización que es titular del contrato."
+  }, {
+    "@language" : "en",
+    "@value" : "Relationship between a utility contract and the organization that holds the contract."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://edint.es/def/suministro#UtilityContract"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "contract holder"
+  }, {
+    "@language" : "es",
+    "@value" : "titular contrato"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://schema.org/Organization"
+  } ]
+}, {
+  "@id" : "https://edint.es/def/suministro#electricityConsumption",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/ns/sosa/ObservableProperty"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "consumo de electricidad"
+  }, {
+    "@language" : "en",
+    "@value" : "electricity consumption"
+  } ]
+}, {
+  "@id" : "https://edint.es/def/suministro#gasConsumption",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/ns/sosa/ObservableProperty"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "consumo de gas"
+  }, {
+    "@language" : "en",
+    "@value" : "gas consumption"
+  } ]
+}, {
+  "@id" : "https://edint.es/def/suministro#hasMeterType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Relación entre el Medidor y una taxonomía de tipos de medidores. Por ejemplo,  \"externo\", \"procesado\", \"telemedida\"."
+  }, {
+    "@language" : "en",
+    "@value" : "Relationship between the meter and a taxonomy of meter types. For example, \"external\", \"processed\", \"telemetry\"."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://saref.etsi.org/core/Meter"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has meter type"
+  }, {
+    "@language" : "es",
+    "@value" : "tiene tipo medidor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "_:genid1"
+  } ]
+}, {
+  "@id" : "https://edint.es/def/suministro#hasRate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Relación entre un contrato de suministro de un servicio y la tarifa que se aplica en dicho contrato."
+  }, {
+    "@language" : "en",
+    "@value" : "Relationship between a utility contracto and the rate that is applied in the contract."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://edint.es/def/suministro#UtilityContract"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has rate"
+  }, {
+    "@language" : "es",
+    "@value" : "tiene tarifa"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://edint.es/def/suministro#UtilityRate"
+  } ]
+}, {
+  "@id" : "https://edint.es/def/suministro#hasUtilitySupplyPoint",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Relación entre un elemento de la infraestructura y un punto de suministro de servicio."
+  }, {
+    "@language" : "en",
+    "@value" : "Relationship between an infrastructure element and a utility supply point."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://edint.es/def/infraestructura#InfrastructureElement"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has utility supply point"
+  }, {
+    "@language" : "es",
+    "@value" : "tiene punto de suministro de servicio"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://edint.es/def/suministro#UtilitySupplyPoint"
+  } ]
+}, {
+  "@id" : "https://edint.es/def/suministro#hasUtilityType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Tipo de suministro asociado a un punto de suministro de un servicio. Puede ser por ejemplo electricidad, aua, gas. Los tipos de suministro son conceptos definidos en una taxonomía (esquema de conceptos SKOS)."
+  }, {
+    "@language" : "en",
+    "@value" : "Type of utility associated to a utility supply point. It can be for example eectricity, water, gas, etc."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://edint.es/def/suministro#UtilitySupplyPoint"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has utility type"
+  }, {
+    "@language" : "es",
+    "@value" : "tiene tipo  suministro"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "_:genid2"
+  } ]
+}, {
+  "@id" : "https://edint.es/def/suministro#waterConsumption",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/ns/sosa/ObservableProperty"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "consumo de agua"
+  }, {
+    "@language" : "en",
+    "@value" : "water consumption"
+  } ]
+}, {
+  "@id" : "https://edint.es/kos/MeterType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#ConceptScheme"
+  } ]
+}, {
+  "@id" : "https://edint.es/kos/UtilityType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#ConceptScheme"
   } ]
 }, {
   "@id" : "https://saref.etsi.org/core/Device",
