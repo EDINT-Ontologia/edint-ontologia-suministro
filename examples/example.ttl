@@ -1,0 +1,129 @@
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix edintinf: <https://edint.es/def/infraestructura#> .
+@prefix edintmetertype: <https://edint.es/kos/MeterType/> .
+@prefix edintsum: <https://edint.es/def/suministro#> .
+@prefix edintutiltype: <https://edint.es/kos/UtilityType/> .
+@prefix esdir: <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/direccion-postal#> .
+@prefix ester: <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#> .
+@prefix geosparql: <http://www.opengis.net/ont/geosparql#> .
+@prefix ma: <http://www.w3.org/ns/ma-ont#> .
+@prefix map: <http://mapping.example.com/> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix qudt: <http://qudt.org/schema/qudt/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix schema: <https://schema.org/> .
+@prefix sd: <http://www.w3.org/ns/sparql-service-description#> .
+@prefix sosa: <http://www.w3.org/ns/sosa/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# Consumo de un suministro
+<https://example.org/recurso/ConsumoSuministro/2258.0_2020_03_AMBIBAMMATUTE_General>
+  a edintsum:UtilityConsumption;
+  dct:identifier "2258.0_2020_03_AMBIBAMMATUTE_General";
+  rdfs:label "Consumo de 13099 kWh en 3/2020", "Lectura del sensor AMBIBAMMATUTE_General correspondiente a 3/2020";
+  sosa:hasFeatureOfInterest <https://example.org/recurso/puntoSuministro/ES2002783120652701XX>;
+  sosa:hasResult <https://example.org/recurso/valorSuministro/2258.0_2020_03_AMBIBAMMATUTE_General>;
+  sosa:madeBySensor <https://example.org/recurso/medidorSuministro/AMBIBAMMATUTE_General>;
+  sosa:phenomenonTime <https://example.org/recurso/intervaloMedicion/2258.0_2020_03_AMBIBAMMATUTE_General> .
+
+# Contrato de suministro
+<https://example.org/recurso/contratoSuministo/2258.0> a edintsum:UtilityContract;
+  dct:identifier "Contrato-ES2002783120652701XX";
+  edintsum:appliesTo <https://example.org/recurso/puntoSuministro/ES2002783120652701XX>;
+  edintsum:contractHolder <https://example.org/recurso/organizacion/AyuntamientoDeMadrid>;
+  edintsum:hasRate <https://example.org/recurso/tarifaSuministro/tarifa_activa_general>;
+  rdfs:label "Contrato de suministro de activeenergy situado en CALLE ISAAC ALBENIZ, 1 28019 MADRID",
+    "Contrato de suministro para: Biblioteca Ana María Matute" .
+
+# Dirección postal
+<https://example.org/recurso/direccion-postal/28019> a esdir:DireccionPostal;
+  rdfs:label "CALLE ISAAC ALBENIZ, 1 28019 MADRID" .
+
+# Definición de la Geometría
+<https://example.org/recurso/equipamiento-municipal/locations/438873.92-4472154.36>
+  a geosparql:Geometry;
+  geosparql:asWKT "POINT (-3.7202936410904 40.3977521494866)"^^geosparql:wktLiteral .
+
+# Elemento de la infraestructura municipal
+<https://example.org/recurso/equipamientoMunicipal/2258.0> a
+    edintinf:InfrastructureElement;
+  dct:identifier "2258.0";
+  edintinf:belongsTo <https://example.org/recurso/sector-publico/territorio/barrio/113>;
+  edintsum:hasUtilitySupplyPoint <https://example.org/recurso/puntoSuministro/ES2002783120652701XX>;
+  geosparql:hasGeometry <https://example.org/recurso/equipamiento-municipal/locations/438873.92-4472154.36>;
+  rdfs:label "Biblioteca Ana María Matute";
+  schema:address <https://example.org/recurso/direccion-postal/28019> .
+
+# Instante de tiempo de comienzo de un intervalo
+<https://example.org/recurso/instante/2258.0_2020_03_AMBIBAMMATUTE_General/2020-03-01T00%3A00%3A00Z>
+  a time:Instant;
+  rdfs:label "Instante de tiempo: 2020-03-01T00:00:00Z";
+  time:inXSDDateTimeStamp "2020-03-01T00:00:00Z"^^xsd:dateTimeStamp .
+
+# Instante de tiempo de final de un intervalo
+<https://example.org/recurso/instante/2258.0_2020_03_AMBIBAMMATUTE_General/2020-03-31T23%3A59%3A59Z>
+  a time:Instant;
+  rdfs:label "Instante de tiempo: 2020-03-31T23:59:59Z";
+  time:inXSDDateTimeStamp "2020-03-31T23:59:59Z"^^xsd:dateTimeStamp .
+
+# Intervalo de tiempo
+<https://example.org/recurso/intervaloMedicion/2258.0_2020_03_AMBIBAMMATUTE_General>
+  a time:Interval;
+  rdfs:label "Período de medición correspondiente a 3/2020";
+  time:hasBeginning <https://example.org/recurso/instante/2258.0_2020_03_AMBIBAMMATUTE_General/2020-03-01T00%3A00%3A00Z>;
+  time:hasEnd <https://example.org/recurso/instante/2258.0_2020_03_AMBIBAMMATUTE_General/2020-03-31T23%3A59%3A59Z> .
+
+# Medidor de consumo de un suministro
+<https://example.org/recurso/medidorSuministro/AMBIBAMMATUTE_General>
+  a edintsum:UtilityMeter;
+  dct:identifier "AMBIBAMMATUTE_General";
+  edintsum:hasMeterType edintmetertype:external;
+  rdfs:label "Medidor: AMBIBAMMATUTE_General, Sensor/Medidor de tipo: external";
+  schema:manufacturer <https://example.org/recurso/organizacion/Siemens> .
+
+# Organización que gestiona el elemento de la infraestructura
+<https://example.org/recurso/organizacion/AyuntamientoDeMadrid>
+  a schema:Organization;
+  dct:identifier "AyuntamientoDeMadrid";
+  rdf:label "Ayuntamiento de Madrid";
+  schema:legalName "Ayuntamiento de Madrid" .
+
+# Organización fabricante del medidor
+<https://example.org/recurso/organizacion/Siemens> a schema:Organization;
+  dct:identifier "Siemens";
+  rdfs:label "Fabricante: Siemens" .
+
+# Punto de suministro
+<https://example.org/recurso/puntoSuministro/ES2002783120652701XX>
+  a edintsum:UtilitySupplyPoint;
+  dct:identifier "ES2002783120652701XX";
+  edintsum:hasUtilityType edintutiltype:activeenergy;
+  rdfs:label "Punto de Suministro ES2002783120652701XX, Descripción/Grupo: Activa Interruptor Gral" .
+
+# Barrio al que pertenece el elemento de la infraestructura
+<https://example.org/recurso/sector-publico/territorio/barrio/113>
+  a ester:Barrio;
+  dct:identifier "113";
+  rdfs:label "SAN ISIDRO" .
+
+# Tarifa del contrato de suministro
+<https://example.org/recurso/tarifaSuministro/tarifa_activa_general>
+  a edintsum:UtilityRate;
+  dct:identifier "tarifa_activa_general";
+  rdfs:label "Tarifa aplicada para el suministro de activeenergy. Referencia del grupo: Activa Interruptor Gral",
+    "Tarifa de tipo: tarifa_activa_general" .
+
+# Unidad de medida
+<https://example.org/recurso/unidad/kWh> a qudt:Unit;
+  rdfs:label "kWh" .
+
+# Valor del consumo
+<https://example.org/recurso/valorSuministro/2258.0_2020_03_AMBIBAMMATUTE_General>
+  a qudt:QuantityValue;
+  qudt:hasUnit <https://example.org/recurso/unidad/kWh>;
+  qudt:value "13099"^^xsd:float;
+  rdfs:label "Cantidad consumida: 13099 kWh" .
