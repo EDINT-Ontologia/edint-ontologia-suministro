@@ -1,4 +1,4 @@
-# Ontología de Suministro (Utility ontology)
+# Ontología EDINT de Suministros
 
 La ontología de Suministro representa los datos relacionados con los servicios suministrados a los elementos de la infraestructura de un municipio y la medición de su consumo. 
 
