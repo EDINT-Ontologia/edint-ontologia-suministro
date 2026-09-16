@@ -7,7 +7,7 @@ La ontología de Suministro representa los datos relacionados con los servicios 
 El propósito de esta ontología es el de proporcionar un vocabulario común para la representación de las entidades y datos principales de los servicios suministrados a los elementos de la infraestructura de un municipio y la medición de su consumo. Su alcance es el de suministros como electricidad, gas, agua, entre otros. La infraestructura de un municipio puede incluir todos los elementos de la infraestructura tales como centros educativos, centros culturales y sociales, centros de salud, aparcamientos así como todos los elementos urbanos. Su alcance cubre los datos que pueden ser utilizados con los propósitos de conocer y gestionar el consumo de recursos por el municipio  que es parte de las funciones habituales de las entidades locales.
 
 # Prefijo y espacio de nombres (Prefix and namespace)
-El prefijo de la ontología de Suministro es: edintsum y es publicada en el espacio de nombres: [http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/suministro#](http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/suministro#) 
+El prefijo de la ontología de Suministro es: edintsum y es publicada en el espacio de nombres: [https://edint.es/def/suministro#](https://edint.es/def/suministro#) 
 
 # Modelo conceptual (Ontology conceptualization)
 ![Modelo conceptual](diagrams/diagrama-conceptual.png)

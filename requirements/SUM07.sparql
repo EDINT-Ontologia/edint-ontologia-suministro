@@ -1,6 +1,6 @@
 # SUM07: ¿Cuál es el consumo de electricidad (en kWh) por mes en un elemento de infraestructura durante el último año?
 
-PREFIX edintsum: <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/suministro#>
+PREFIX edintsum: <https://edint.es/def/suministro#>
 PREFIX sosa: <http://www.w3.org/ns/sosa/>
 PREFIX qudt: <http://qudt.org/schema/qudt/>
 PREFIX time: <http://www.w3.org/2006/time#>
