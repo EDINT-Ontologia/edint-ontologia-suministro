@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="https://edint.es/def/suministro"
+<rdf:RDF xmlns="https://edint.es/def/suministro#"
      xml:base="https://edint.es/def/suministro"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:gsp="http://www.opengis.net/ont/geosparql#"
