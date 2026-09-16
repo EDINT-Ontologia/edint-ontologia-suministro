@@ -1,7 +1,7 @@
 prefixes:
-  edintsum: http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/suministro#
+  edintsum: https://edint.es/def/suministro#
   edintutiltype: http://vocab.linkeddata.es/datosabiertos/kos/edint/UtilityType/
-  edintinf: http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/infraestructura#
+  edintinf: https://edint.es/def/infraestructura#
   sosa: http://www.w3.org/ns/sosa/
   edintmetertype: http://vocab.linkeddata.es/datosabiertos/kos/edint/MeterType/
   schema: https://schema.org/
