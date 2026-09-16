@@ -18,7 +18,8 @@
      xmlns:schema="http://schema.org/"
      xmlns:dcterms="http://purl.org/dc/terms/"
      xmlns:edintinf="https://edint.es/def/infraestructura#"
-     xmlns:edintkos="https://edint.es/kos/">
+     xmlns:edintkos="https://edint.es/kos/"
+     xmlns:bibo="http://purl.org/ontology/bibo/">
     <owl:Ontology rdf:about="https://edint.es/def/suministro">
         <owl:versionIRI rdf:resource="https://edint.es/def/suministro"/>
         <dcterms:created>2026-03-23</dcterms:created>
@@ -37,7 +38,12 @@
         <vann:preferredNamespaceUri rdf:resource="https://edint.es/def/suministro#"/>
         <owl:priorVersion rdf:resource="https://github.com/EDINT-Ontologia/edint-ontologia-suministro/releases/tag/v0.2.0"/>
         <owl:versionInfo>0.2.1</owl:versionInfo>
-    </owl:Ontology>
+        <dcterms:publisher rdf:resource="https://www.femp.es/"/>
+    <dcterms:bibliographicCitation xml:lang="es">Ontología para la representación de los suministros de servicios a la infraestructura de un municipio. EDINT. Revision: v0.2.1.</dcterms:bibliographicCitation>
+    <schema:creativeWorkStatus xml:lang="en">Ontology Specification</schema:creativeWorkStatus>
+    <dcterms:abstract xml:lang="es">El propósito de esta ontología es el de proporcionar un vocabulario común para la representación de todos los conceptos relacionados con los servicios suministrados a los elementos de la infraestructura de un municipio y la medición de su consumo. Su alcance es el de suministros como electricidad, gas, agua, entre otros, que son parte de las funciones habituales de las entidades locales.</dcterms:abstract>
+    <dcterms:abstract xml:lang="en">The purpose of this ontology is to provide a common vocabulary for representing all concepts related to the utilities supplied to the elements of a municipality's infrastructure and the measurement of their consumption. Its scope includes supplies such as electricity, gas, and water, among others, which are part of the routine functions of local authorities.</dcterms:abstract>
+</owl:Ontology>
     
 
 
