@@ -1,8 +1,8 @@
 @prefix edintsum: <https://edint.es/def/suministro#>.
-@prefix edintutiltype: <http://vocab.linkeddata.es/datosabiertos/kos/edint/UtilityType/>.
+@prefix edintutiltype: <https://edint.es/kos/UtilityType/>.
 @prefix edintinf: <https://edint.es/def/infraestructura#>.
 @prefix sosa: <http://www.w3.org/ns/sosa/>.
-@prefix edintmetertype: <http://vocab.linkeddata.es/datosabiertos/kos/edint/MeterType/>.
+@prefix edintmetertype: <https://edint.es/kos/MeterType/>.
 @prefix schema: <https://schema.org/>.
 @prefix dct: <http://purl.org/dc/terms/>.
 @prefix esdir: <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/direccion-postal#>.
@@ -86,7 +86,7 @@ map:rules_000 schema:contributor map:person_000 ;
 		];
 		rr:objectMap [
 			a rr:ObjectMap;
-			rr:template "http://vocab.linkeddata.es/datosabiertos/kos/edint/UtilityType/{CLASE}";
+			rr:template "https://edint.es/kos/UtilityType/{CLASE}";
 			rr:termType rr:IRI
 		];
 	].
@@ -852,7 +852,7 @@ map:rules_000 schema:contributor map:person_000 ;
 		];
 		rr:objectMap [
 			a rr:ObjectMap;
-			rr:template "http://vocab.linkeddata.es/datosabiertos/kos/edint/MeterType/{TIPO}";
+			rr:template "https://edint.es/kos/MeterType/{TIPO}";
 			rr:termType rr:IRI
 		];
 	];

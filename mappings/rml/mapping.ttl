@@ -11,9 +11,9 @@
 @prefix sosa: <http://www.w3.org/ns/sosa/> .
 @prefix time: <http://www.w3.org/2006/time#> .
 @prefix edintsum: <https://edint.es/def/suministro#> .
-@prefix edintutiltype: <http://vocab.linkeddata.es/datosabiertos/kos/edint/UtilityType/> .
+@prefix edintutiltype: <https://edint.es/kos/UtilityType/> .
 @prefix edintinf: <https://edint.es/def/infraestructura#> .
-@prefix edintmetertype: <http://vocab.linkeddata.es/datosabiertos/kos/edint/MeterType/> .
+@prefix edintmetertype: <https://edint.es/kos/MeterType/> .
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix esdir: <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/direccion-postal#> .
 @prefix geosparql: <http://www.opengis.net/ont/geosparql#> .
@@ -129,7 +129,7 @@ map:om_002 rdf:type rr:ObjectMap ;
 	rr:termType rr:Literal .
 
 map:om_003 rdf:type rr:ObjectMap ;
-	rr:template "http://vocab.linkeddata.es/datosabiertos/kos/edint/UtilityType/{CLASE}" ;
+	rr:template "https://edint.es/kos/UtilityType/{CLASE}" ;
 	rr:termType rr:IRI .
 
 map:om_004 rdf:type rr:ObjectMap ;
@@ -353,7 +353,7 @@ map:om_057 rdf:type rr:ObjectMap ;
 	rr:termType rr:IRI .
 
 map:om_058 rdf:type rr:ObjectMap ;
-	rr:template "http://vocab.linkeddata.es/datosabiertos/kos/edint/MeterType/{TIPO}" ;
+	rr:template "https://edint.es/kos/MeterType/{TIPO}" ;
 	rr:termType rr:IRI .
 
 map:om_059 rml:reference "SENSOR" ;
