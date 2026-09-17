@@ -21,7 +21,6 @@
      xmlns:edintkos="https://edint.es/kos/"
      xmlns:bibo="http://purl.org/ontology/bibo/" xmlns:foaf="http://xmlns.com/foaf/0.1/">    <owl:Ontology rdf:about="https://edint.es/def/suministro">
         <owl:versionIRI rdf:resource="https://edint.es/def/suministro/0.2.1"/>
-        <dcterms:created>2026-03-23</dcterms:created>
         <dcterms:creator rdf:parseType="Resource">
             <foaf:name>Daniel Doña</foaf:name>
             <schema:affiliation rdf:resource="https://oeg.fi.upm.es/"/>
@@ -44,7 +43,6 @@
         </dcterms:creator>
         <dcterms:description xml:lang="es">La ontología de suministros describe todos los conceptos relacionados con los servicios suministrados a los elementos de la infraestructura de un municipio y la medición de su consumo. Su alcance es el de suministros como electricidad, gas, agua, entre otros.</dcterms:description>
         <dcterms:description xml:lang="en">The Utilities ontology describes all concepts related to the utilities provided to a municipality&apos;s infrastructure elements and the measurement of their consumption. Its scope covers utilities such as electricity, gas, water, and others.</dcterms:description>
-        <dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-03-23</dcterms:issued>
         <dcterms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
         <dcterms:title xml:lang="es">Ontología EDINT de Suministros</dcterms:title>
         <dcterms:title xml:lang="en">EDINT Utilities Ontology</dcterms:title>
@@ -52,6 +50,9 @@
         <vann:preferredNamespaceUri rdf:resource="https://edint.es/def/suministro#"/>
         <owl:priorVersion rdf:resource="https://github.com/EDINT-Ontologia/edint-ontologia-suministro/releases/tag/v0.2.0"/>
         <owl:versionInfo>0.2.1</owl:versionInfo>
+        <dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-03-23</dcterms:created>
+        <dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-09-17</dcterms:issued>
+        <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-09-17</dcterms:modified>
         <dcterms:publisher rdf:parseType="Resource">
             <foaf:name>FEMP</foaf:name>
             <foaf:homepage rdf:resource="https://www.femp.es/"/>
