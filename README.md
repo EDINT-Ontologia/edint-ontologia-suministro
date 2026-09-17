@@ -1,5 +1,9 @@
 # Ontología de Suministro (Utility ontology)
 
+[![Documentación](https://img.shields.io/badge/documentaci%C3%B3n-edint.es-blue)](https://edint.es/def/suministro)
+![Prefijo](https://img.shields.io/badge/prefijo-edintsum-informational)
+[![Licencia](https://img.shields.io/badge/licencia-CC%20BY--SA%204.0-lightgrey)](LICENSE)
+
 La ontología de Suministro representa los datos relacionados con los servicios suministrados a los elementos de la infraestructura de un municipio y la medición de su consumo. 
 
 # Propósito y alcance de la ontología (Purpose and scope of the ontology)
