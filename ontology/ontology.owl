@@ -61,7 +61,7 @@
             <foaf:homepage rdf:resource="https://www.femp.es/"/>
             <schema:affiliation>Federación Española de Municipios y Provincias</schema:affiliation>
         </dcterms:publisher>
-    <dcterms:bibliographicCitation xml:lang="es">Ontología EDINT de Suministros. EDINT. Revision: v0.2.1.</dcterms:bibliographicCitation>
+    <dcterms:bibliographicCitation xml:lang="es">Ontología EDINT de Suministros. EDINT. Revisión: v0.2.1.</dcterms:bibliographicCitation>
     <dcterms:bibliographicCitation xml:lang="en">EDINT Utilities Ontology. EDINT. Revision: v0.2.1.</dcterms:bibliographicCitation>
     <schema:creativeWorkStatus xml:lang="en">Ontology Specification</schema:creativeWorkStatus>
     <dcterms:abstract xml:lang="es">El propósito de esta ontología es el de proporcionar un vocabulario común para la representación de todos los conceptos relacionados con los servicios suministrados a los elementos de la infraestructura de un municipio y la medición de su consumo. Su alcance es el de suministros como electricidad, gas, agua, entre otros, que son parte de las funciones habituales de las entidades locales.</dcterms:abstract>
