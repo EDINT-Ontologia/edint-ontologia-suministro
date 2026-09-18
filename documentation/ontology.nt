@@ -1,21 +1,89 @@
 <https://edint.es/def/suministro> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
-<https://edint.es/def/suministro> <http://www.w3.org/2002/07/owl#versionIRI> <https://edint.es/def/suministro> .
-<https://edint.es/def/suministro> <http://purl.org/dc/terms/created> "2026-03-23" .
-<https://edint.es/def/suministro> <http://purl.org/dc/terms/creator> "Daniel Doña" .
-<https://edint.es/def/suministro> <http://purl.org/dc/terms/creator> "Edna Ruckhaus" .
-<https://edint.es/def/suministro> <http://purl.org/dc/terms/creator> "Lucía Sánchez" .
-<https://edint.es/def/suministro> <http://purl.org/dc/terms/creator> "Oscar Corcho" .
-<https://edint.es/def/suministro> <http://purl.org/dc/terms/creator> "Socorro Bernardos" .
+<https://edint.es/def/suministro> <http://www.w3.org/2002/07/owl#versionIRI> <https://edint.es/def/suministro/0.2.1> .
+<https://edint.es/def/suministro> <http://purl.org/dc/terms/abstract> "El propósito de esta ontología es el de proporcionar un vocabulario común para la representación de todos los conceptos relacionados con los servicios suministrados a los elementos de la infraestructura de un municipio y la medición de su consumo. Su alcance es el de suministros como electricidad, gas, agua, entre otros, que son parte de las funciones habituales de las entidades locales."@es .
+<https://edint.es/def/suministro> <http://purl.org/dc/terms/abstract> "The purpose of this ontology is to provide a common vocabulary for representing all concepts related to the utilities supplied to the elements of a municipality's infrastructure and the measurement of their consumption. Its scope includes supplies such as electricity, gas, and water, among others, which are part of the routine functions of local authorities."@en .
+<https://edint.es/def/suministro> <http://purl.org/dc/terms/bibliographicCitation> "EDINT Utilities Ontology. EDINT. Revision: v0.2.1."@en .
+<https://edint.es/def/suministro> <http://purl.org/dc/terms/bibliographicCitation> "Ontología EDINT de Suministros. EDINT. Revisión: v0.2.1."@es .
+<https://edint.es/def/suministro> <http://purl.org/dc/terms/created> "2026-03-23"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://edint.es/def/suministro> <http://purl.org/dc/terms/creator> _:genid1 .
+_:genid1 <http://xmlns.com/foaf/0.1/name> "Socorro Bernardos" .
+_:genid1 <http://schema.org/affiliation> <https://oeg.fi.upm.es/> .
+<https://edint.es/def/suministro> <http://purl.org/dc/terms/creator> _:genid2 .
+_:genid2 <http://xmlns.com/foaf/0.1/name> "Oscar Corcho" .
+_:genid2 <http://schema.org/affiliation> <https://oeg.fi.upm.es/> .
+<https://edint.es/def/suministro> <http://purl.org/dc/terms/creator> _:genid3 .
+_:genid3 <http://xmlns.com/foaf/0.1/name> "Lucía Sánchez" .
+_:genid3 <http://schema.org/affiliation> <https://oeg.fi.upm.es/> .
+<https://edint.es/def/suministro> <http://purl.org/dc/terms/creator> _:genid4 .
+_:genid4 <http://xmlns.com/foaf/0.1/name> "Edna Ruckhaus" .
+_:genid4 <http://schema.org/affiliation> <https://oeg.fi.upm.es/> .
+<https://edint.es/def/suministro> <http://purl.org/dc/terms/creator> _:genid5 .
+_:genid5 <http://xmlns.com/foaf/0.1/name> "Daniel Doña" .
+_:genid5 <http://schema.org/affiliation> <https://oeg.fi.upm.es/> .
 <https://edint.es/def/suministro> <http://purl.org/dc/terms/description> "La ontología de suministros describe todos los conceptos relacionados con los servicios suministrados a los elementos de la infraestructura de un municipio y la medición de su consumo. Su alcance es el de suministros como electricidad, gas, agua, entre otros."@es .
 <https://edint.es/def/suministro> <http://purl.org/dc/terms/description> "The Utilities ontology describes all concepts related to the utilities provided to a municipality's infrastructure elements and the measurement of their consumption. Its scope covers utilities such as electricity, gas, water, and others."@en .
-<https://edint.es/def/suministro> <http://purl.org/dc/terms/issued> "2026-03-23"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://edint.es/def/suministro> <http://purl.org/dc/terms/issued> "2026-09-17"^^<http://www.w3.org/2001/XMLSchema#date> .
 <https://edint.es/def/suministro> <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> .
-<https://edint.es/def/suministro> <http://purl.org/dc/terms/title> "Ontología de Suministros"@es .
-<https://edint.es/def/suministro> <http://purl.org/dc/terms/title> "The Utilities Ontology"@en .
+<https://edint.es/def/suministro> <http://purl.org/dc/terms/modified> "2026-09-17"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://edint.es/def/suministro> <http://purl.org/dc/terms/publisher> _:genid6 .
+_:genid6 <http://xmlns.com/foaf/0.1/name> "FEMP" .
+_:genid6 <http://xmlns.com/foaf/0.1/homepage> <https://www.femp.es/> .
+_:genid6 <http://schema.org/affiliation> "Federación Española de Municipios y Provincias" .
+<https://edint.es/def/suministro> <http://purl.org/dc/terms/title> "EDINT Utilities Ontology"@en .
+<https://edint.es/def/suministro> <http://purl.org/dc/terms/title> "Ontología EDINT de Suministros"@es .
 <https://edint.es/def/suministro> <http://purl.org/vocab/vann/preferredNamespacePrefix> "edintsum" .
 <https://edint.es/def/suministro> <http://purl.org/vocab/vann/preferredNamespaceUri> <https://edint.es/def/suministro#> .
+<https://edint.es/def/suministro> <http://schema.org/codeRepository> <https://github.com/EDINT-Ontologia/edint-ontologia-suministro> .
+<https://edint.es/def/suministro> <http://schema.org/creativeWorkStatus> "Ontology Specification"@en .
+<https://edint.es/def/suministro> <http://schema.org/funding> "Espacio de Datos para las Infraestructuras Urbanas Inteligentes (EDINT)" .
+<https://edint.es/def/suministro> <http://www.w3.org/2000/01/rdf-schema#label> "Suministros"@es .
+<https://edint.es/def/suministro> <http://www.w3.org/2000/01/rdf-schema#label> "Utilities"@en .
 <https://edint.es/def/suministro> <http://www.w3.org/2002/07/owl#priorVersion> <https://github.com/EDINT-Ontologia/edint-ontologia-suministro/releases/tag/v0.2.0> .
 <https://edint.es/def/suministro> <http://www.w3.org/2002/07/owl#versionInfo> "0.2.1" .
+<https://edint.es/def/suministro> <https://w3id.org/widoco/vocab#jsonldSerialization> "ontology.jsonld" .
+<https://edint.es/def/suministro> <https://w3id.org/widoco/vocab#ntSerialization> "ontology.nt" .
+<https://edint.es/def/suministro> <https://w3id.org/widoco/vocab#rdfxmlSerialization> "ontology.rdf" .
+<https://edint.es/def/suministro> <https://w3id.org/widoco/vocab#turtleSerialization> "ontology.ttl" .
+<https://edint.es/def/suministro> <https://w3id.org/widoco/vocab#vocabularyLabel> _:genid7 .
+_:genid7 <https://w3id.org/widoco/vocab#vocabularyIRI> <https://edint.es/def/infraestructura> .
+_:genid7 <http://www.w3.org/2000/01/rdf-schema#label> "Infrastructure (edintinf)"@en .
+_:genid7 <http://www.w3.org/2000/01/rdf-schema#label> "Infraestructura (edintinf)"@es .
+<https://edint.es/def/suministro> <https://w3id.org/widoco/vocab#vocabularyLabel> _:genid8 .
+_:genid8 <https://w3id.org/widoco/vocab#vocabularyIRI> <https://datos.ign.es/def/geo_core> .
+_:genid8 <http://www.w3.org/2000/01/rdf-schema#label> "geo_core (IGN)"@es .
+_:genid8 <http://www.w3.org/2000/01/rdf-schema#label> "geo_core (IGN)"@en .
+<https://edint.es/def/suministro> <https://w3id.org/widoco/vocab#vocabularyLabel> _:genid9 .
+_:genid9 <https://w3id.org/widoco/vocab#vocabularyIRI> <http://www.w3.org/ns/sosa> .
+_:genid9 <http://www.w3.org/2000/01/rdf-schema#label> "SOSA/SSN"@es .
+_:genid9 <http://www.w3.org/2000/01/rdf-schema#label> "SOSA/SSN"@en .
+<https://edint.es/def/suministro> <https://w3id.org/widoco/vocab#vocabularyLabel> _:genid10 .
+_:genid10 <https://w3id.org/widoco/vocab#vocabularyIRI> <http://www.w3.org/2006/time> .
+_:genid10 <http://www.w3.org/2000/01/rdf-schema#label> "OWL-Time"@es .
+_:genid10 <http://www.w3.org/2000/01/rdf-schema#label> "OWL-Time"@en .
+<https://edint.es/def/suministro> <https://w3id.org/widoco/vocab#vocabularyLabel> _:genid11 .
+_:genid11 <https://w3id.org/widoco/vocab#vocabularyIRI> <https://saref.etsi.org/core> .
+_:genid11 <http://www.w3.org/2000/01/rdf-schema#label> "SAREF"@es .
+_:genid11 <http://www.w3.org/2000/01/rdf-schema#label> "SAREF"@en .
+<https://edint.es/def/suministro> <https://w3id.org/widoco/vocab#vocabularyLabel> _:genid12 .
+_:genid12 <https://w3id.org/widoco/vocab#vocabularyIRI> <http://qudt.org/schema/qudt> .
+_:genid12 <http://www.w3.org/2000/01/rdf-schema#label> "QUDT"@es .
+_:genid12 <http://www.w3.org/2000/01/rdf-schema#label> "QUDT"@en .
+<https://edint.es/def/suministro> <https://w3id.org/widoco/vocab#vocabularyLabel> _:genid13 .
+_:genid13 <https://w3id.org/widoco/vocab#vocabularyIRI> <http://www.opengis.net/ont/sf> .
+_:genid13 <http://www.w3.org/2000/01/rdf-schema#label> "OGC Simple Features"@es .
+_:genid13 <http://www.w3.org/2000/01/rdf-schema#label> "OGC Simple Features"@en .
+<https://edint.es/def/suministro> <https://w3id.org/widoco/vocab#vocabularyLabel> _:genid14 .
+_:genid14 <https://w3id.org/widoco/vocab#vocabularyIRI> <http://www.opengis.net/ont/geosparql> .
+_:genid14 <http://www.w3.org/2000/01/rdf-schema#label> "GeoSPARQL"@es .
+_:genid14 <http://www.w3.org/2000/01/rdf-schema#label> "GeoSPARQL"@en .
+<https://edint.es/def/suministro> <https://w3id.org/widoco/vocab#vocabularyLabel> _:genid15 .
+_:genid15 <https://w3id.org/widoco/vocab#vocabularyIRI> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio> .
+_:genid15 <http://www.w3.org/2000/01/rdf-schema#label> "Territory (esadm)"@en .
+_:genid15 <http://www.w3.org/2000/01/rdf-schema#label> "Territorio (esadm)"@es .
+<https://edint.es/def/suministro> <https://w3id.org/widoco/vocab#vocabularyLabel> _:genid16 .
+_:genid16 <https://w3id.org/widoco/vocab#vocabularyIRI> <http://vocab.ciudadesabiertas.es/def/transporte/trafico> .
+_:genid16 <http://www.w3.org/2000/01/rdf-schema#label> "Tráfico (Ciudades Abiertas)"@es .
+_:genid16 <http://www.w3.org/2000/01/rdf-schema#label> "Traffic (Ciudades Abiertas)"@en .
 # 
 # 
 # #################################################################
@@ -27,6 +95,12 @@
 # 
 # http://purl.org/dc/elements/1.1/source
 <http://purl.org/dc/elements/1.1/source> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/abstract
+<http://purl.org/dc/terms/abstract> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/bibliographicCitation
+<http://purl.org/dc/terms/bibliographicCitation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
 # http://purl.org/dc/terms/contributor
 <http://purl.org/dc/terms/contributor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
@@ -46,6 +120,12 @@
 # http://purl.org/dc/terms/license
 <http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
+# http://purl.org/dc/terms/modified
+<http://purl.org/dc/terms/modified> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/publisher
+<http://purl.org/dc/terms/publisher> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
 # http://purl.org/dc/terms/source
 <http://purl.org/dc/terms/source> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
@@ -61,8 +141,20 @@
 # http://qudt.org/schema/qudt/informativeReference
 <http://qudt.org/schema/qudt/informativeReference> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
+# http://schema.org/affiliation
+<http://schema.org/affiliation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://schema.org/codeRepository
+<http://schema.org/codeRepository> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://schema.org/creativeWorkStatus
+<http://schema.org/creativeWorkStatus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
 # http://schema.org/domainIncludes
 <http://schema.org/domainIncludes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://schema.org/funding
+<http://schema.org/funding> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
 # http://schema.org/rangeIncludes
 <http://schema.org/rangeIncludes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
@@ -88,8 +180,32 @@
 # http://www.w3.org/2004/02/skos/core#note
 <http://www.w3.org/2004/02/skos/core#note> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
+# http://xmlns.com/foaf/0.1/homepage
+<http://xmlns.com/foaf/0.1/homepage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://xmlns.com/foaf/0.1/name
+<http://xmlns.com/foaf/0.1/name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
 # https://w3id.org/mod#createdWith
 <https://w3id.org/mod#createdWith> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://w3id.org/widoco/vocab#jsonldSerialization
+<https://w3id.org/widoco/vocab#jsonldSerialization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://w3id.org/widoco/vocab#ntSerialization
+<https://w3id.org/widoco/vocab#ntSerialization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://w3id.org/widoco/vocab#rdfxmlSerialization
+<https://w3id.org/widoco/vocab#rdfxmlSerialization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://w3id.org/widoco/vocab#turtleSerialization
+<https://w3id.org/widoco/vocab#turtleSerialization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://w3id.org/widoco/vocab#vocabularyIRI
+<https://w3id.org/widoco/vocab#vocabularyIRI> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://w3id.org/widoco/vocab#vocabularyLabel
+<https://w3id.org/widoco/vocab#vocabularyLabel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
 # 
 # 
@@ -306,10 +422,10 @@
 # https://edint.es/def/suministro#hasMeterType
 <https://edint.es/def/suministro#hasMeterType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://edint.es/def/suministro#hasMeterType> <http://www.w3.org/2000/01/rdf-schema#domain> <https://saref.etsi.org/core/Meter> .
-<https://edint.es/def/suministro#hasMeterType> <http://www.w3.org/2000/01/rdf-schema#range> _:genid1 .
-_:genid1 <http://www.w3.org/2002/07/owl#hasValue> <https://edint.es/kos/MeterType> .
-_:genid1 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2004/02/skos/core#inScheme> .
-_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://edint.es/def/suministro#hasMeterType> <http://www.w3.org/2000/01/rdf-schema#range> _:genid17 .
+_:genid17 <http://www.w3.org/2002/07/owl#hasValue> <https://edint.es/kos/MeterType> .
+_:genid17 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2004/02/skos/core#inScheme> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://edint.es/def/suministro#hasMeterType> <http://www.w3.org/2000/01/rdf-schema#comment> "Relación entre el Medidor y una taxonomía de tipos de medidores. Por ejemplo,  \"externo\", \"procesado\", \"telemedida\"."@es .
 <https://edint.es/def/suministro#hasMeterType> <http://www.w3.org/2000/01/rdf-schema#comment> "Relationship between the meter and a taxonomy of meter types. For example, \"external\", \"processed\", \"telemetry\"."@en .
 <https://edint.es/def/suministro#hasMeterType> <http://www.w3.org/2000/01/rdf-schema#label> "has meter type"@en .
@@ -336,10 +452,10 @@ _:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 # https://edint.es/def/suministro#hasUtilityType
 <https://edint.es/def/suministro#hasUtilityType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://edint.es/def/suministro#hasUtilityType> <http://www.w3.org/2000/01/rdf-schema#domain> <https://edint.es/def/suministro#UtilitySupplyPoint> .
-<https://edint.es/def/suministro#hasUtilityType> <http://www.w3.org/2000/01/rdf-schema#range> _:genid2 .
-_:genid2 <http://www.w3.org/2002/07/owl#hasValue> <https://edint.es/kos/UtilityType> .
-_:genid2 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2004/02/skos/core#inScheme> .
-_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://edint.es/def/suministro#hasUtilityType> <http://www.w3.org/2000/01/rdf-schema#range> _:genid18 .
+_:genid18 <http://www.w3.org/2002/07/owl#hasValue> <https://edint.es/kos/UtilityType> .
+_:genid18 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2004/02/skos/core#inScheme> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://edint.es/def/suministro#hasUtilityType> <http://www.w3.org/2000/01/rdf-schema#comment> "Tipo de suministro asociado a un punto de suministro de un servicio. Puede ser por ejemplo electricidad, aua, gas. Los tipos de suministro son conceptos definidos en una taxonomía (esquema de conceptos SKOS)."@es .
 <https://edint.es/def/suministro#hasUtilityType> <http://www.w3.org/2000/01/rdf-schema#comment> "Type of utility associated to a utility supply point. It can be for example eectricity, water, gas, etc."@en .
 <https://edint.es/def/suministro#hasUtilityType> <http://www.w3.org/2000/01/rdf-schema#label> "has utility type"@en .
@@ -471,10 +587,10 @@ _:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 <http://qudt.org/schema/qudt/QuantityValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://qudt.org/schema/qudt/QuantityValue> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://qudt.org/schema/qudt/Concept> .
 <http://qudt.org/schema/qudt/QuantityValue> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://qudt.org/schema/qudt/Quantifiable> .
-<http://qudt.org/schema/qudt/QuantityValue> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid3 .
-_:genid3 <http://www.w3.org/2002/07/owl#maxCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid3 <http://www.w3.org/2002/07/owl#onProperty> <http://qudt.org/schema/qudt/hasUnit> .
-_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://qudt.org/schema/qudt/QuantityValue> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid19 .
+_:genid19 <http://www.w3.org/2002/07/owl#maxCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid19 <http://www.w3.org/2002/07/owl#onProperty> <http://qudt.org/schema/qudt/hasUnit> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <http://qudt.org/schema/qudt/QuantityValue> <http://www.w3.org/2000/01/rdf-schema#comment> "A Quantity Value  expresses the magnitude and kind of a quantity and is given by the product of a numerical value n and a unit of measure U. The number multiplying the unit is referred to as the numerical value of the quantity expressed in that unit. Refer to \"http://physics.nist.gov/Pubs/SP811/sec07.html\", NIST SP 811 section 7,  for more on quantity values."@en .
 <http://qudt.org/schema/qudt/QuantityValue> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://qudt.org/schema/qudt> .
 <http://qudt.org/schema/qudt/QuantityValue> <http://www.w3.org/2000/01/rdf-schema#label> "Quantity value" .
@@ -588,15 +704,15 @@ _:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 # 
 # http://www.w3.org/2006/time#TemporalEntity
 <http://www.w3.org/2006/time#TemporalEntity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.w3.org/2006/time#TemporalEntity> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid4 .
-_:genid4 <http://www.w3.org/2002/07/owl#unionOf> _:genid6 .
-_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid5 .
-_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2006/time#Interval> .
-_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2006/time#Instant> .
-_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/2006/time#TemporalEntity> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid20 .
+_:genid20 <http://www.w3.org/2002/07/owl#unionOf> _:genid22 .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid21 .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2006/time#Interval> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2006/time#Instant> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://www.w3.org/2006/time#TemporalEntity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
 <http://www.w3.org/2006/time#TemporalEntity> <http://www.w3.org/2000/01/rdf-schema#comment> "A temporal interval or instant."@en .
 <http://www.w3.org/2006/time#TemporalEntity> <http://www.w3.org/2000/01/rdf-schema#comment> "Un intervalo temporal o un instante."@es .
@@ -749,5 +865,16 @@ _:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 # https://edint.es/kos/UtilityType
 <https://edint.es/kos/UtilityType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://edint.es/kos/UtilityType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Annotations
+# #
+# #################################################################
+# 
+# 
+<https://oeg.fi.upm.es/> <http://xmlns.com/foaf/0.1/name> "Ontology Engineering Group, UPM" .
 # 
 # Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
