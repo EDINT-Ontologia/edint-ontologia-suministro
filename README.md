@@ -1,4 +1,4 @@
-# Ontología de Suministro (Utility ontology)
+# Ontología EDINT de Suministros
 
 [![Documentación](https://img.shields.io/badge/documentaci%C3%B3n-edint.es-blue)](https://edint.es/def/suministro)
 ![Prefijo](https://img.shields.io/badge/prefijo-edintsum-informational)
