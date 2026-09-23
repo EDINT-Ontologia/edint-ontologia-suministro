@@ -1,13 +1,9 @@
 """Dimensión: coherencia de los vocabularios SKOS del repo."""
-import re
-
-import pytest
 from rdflib import URIRef
 
 SKOS = "http://www.w3.org/2004/02/skos/core#"
 IN_SCHEME = URIRef(SKOS + "inScheme")
 CONCEPT_SCHEME = URIRef(SKOS + "ConceptScheme")
-CONCEPT = URIRef(SKOS + "ConceptScheme")  # se recalcula abajo
 CONCEPT = URIRef(SKOS + "Concept")
 PREF_LABEL = URIRef(SKOS + "prefLabel")
 

@@ -22,6 +22,7 @@ ESQUEMAS_URI_VALIDOS = set(CONFIG["reglas"]["esquemas_uri_validos"])
 SLUG_EDINT = re.compile(CONFIG["reglas"]["slug_edint"])
 PREFIJO_REGEX = CONFIG["reglas"]["prefijo"]
 PATRONES_BASURA = CONFIG["reglas"]["patrones_basura"]
+SUFIJOS_DATOS = set(CONFIG["reglas"]["sufijos_datos"])
 
 NS_DEF = CONFIG["namespaces"]["def"]
 NS_KOS = CONFIG["namespaces"]["kos"]

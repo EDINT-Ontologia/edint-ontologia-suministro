@@ -1,4 +1,6 @@
 """Dimensión: los ejemplos validan contra las shapes (con la ontología cargada)."""
+
+import pytest
 import subprocess
 import sys
 from pathlib import Path

@@ -1,4 +1,6 @@
 """Dimensión: cobertura de rdfs:label es/en en los términos propios."""
+
+import pytest
 from util import UMBRAL_LABELS
 from rdflib import Literal, URIRef
 from rdflib.namespace import OWL, RDFS

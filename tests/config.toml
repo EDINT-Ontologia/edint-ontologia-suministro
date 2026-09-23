@@ -15,6 +15,7 @@ shacl_timeout_s = 600          # límite de la validación SHACL
 esquemas_uri_validos = ["http", "https"]
 slug_edint = "^[a-z0-9]+(-[a-z0-9]+)*$"
 prefijo = "edint[a-z]+"
+sufijos_datos = [".csv", ".xlsx", ".geojson", ".wkt", ".pdf"]
 patrones_basura = ["*.bak", "*.orig", "*.rej", ".DS_Store", "__pycache__/*", "*.pyc", ".pytest_cache/*", ".venv/*", ".shacl_*.ttl"]
 
 [estructura]

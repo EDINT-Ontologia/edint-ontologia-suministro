@@ -32,8 +32,8 @@ def test_namespace_del_repo(iri_ontologia, slug):
     )
 
 
-def test_version_iri_semver(modelo):
-    vis = [str(v) for v in modelo.objects(None, OWL.versionIRI)]
+def test_version_iri_semver(modelo, iri_ontologia):
+    vis = [str(v) for v in modelo.objects(iri_ontologia, OWL.versionIRI)]
     assert vis, "falta owl:versionIRI"
     for vi in vis:
         assert re.fullmatch(r"https://edint\.es/def/[a-z0-9-]+/\d+\.\d+\.\d+", vi), (

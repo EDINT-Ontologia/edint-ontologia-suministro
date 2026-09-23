@@ -10,7 +10,7 @@ import pytest
 from rdflib import Graph
 from rdflib.namespace import OWL, RDF
 
-from util import PALABRAS_MINIMAS, PARIDAD_SECCIONES, ROOT, sniff_parse
+from util import PALABRAS_MINIMAS, PARIDAD_SECCIONES, ROOT
 
 
 def _palabras(path) -> int:
