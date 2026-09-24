@@ -1,4 +1,4 @@
-"""Dimensión: los ejemplos validan contra las shapes (con la ontología cargada)."""
+"""Dimensión: los ejemplos del repo validan contra sus shapes."""
 
 import pytest
 import subprocess

@@ -21,7 +21,7 @@ jobs:
           cache-dependency-path: tests/requirements.txt
       - run: pip install -r tests/requirements.txt
       - name: Tests por dimensión
-        run: python -m pytest tests/ -q --tb=no --no-header -p no:cacheprovider -p no:warnings --junitxml=$RUNNER_TEMP/resultados.xml
+        run: python -m pytest tests/ -q --tb=no --no-header -p no:cacheprovider -p no:warnings --timeout=300 --timeout-method=thread --junitxml=$RUNNER_TEMP/resultados.xml
         continue-on-error: true
       - name: Resumen (tabla y detalle) en el run y en el PR
         if: always()
