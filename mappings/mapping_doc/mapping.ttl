@@ -4,6 +4,7 @@
 @prefix sosa: <http://www.w3.org/ns/sosa/>.
 @prefix edintmetertype: <https://edint.es/kos/MeterType/>.
 @prefix schema: <https://schema.org/>.
+@prefix dct: <http://purl.org/dc/terms/>.
 @prefix esdir: <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/direccion-postal#>.
 @prefix geosparql: <http://www.opengis.net/ont/geosparql#>.
 @prefix ester: <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#>.
@@ -26,7 +27,7 @@
 @prefix map: <http://mapping.example.com/> .
 @base <http://example.com/ns#>.
 
-map:person_000 dcterms:contributor foaf:Person ;
+map:person_000 dct:contributor foaf:Person ;
     rdfs:label "Jhon Toledo" ;
     foaf:mbox <mailto:ja.toledo@upm.es> .
 
