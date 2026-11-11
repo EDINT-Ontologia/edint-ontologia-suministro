@@ -31,13 +31,13 @@
         <terms:description xml:lang="es">La ontología de suministros describe todos los conceptos relacionados con los servicios suministrados a los elementos de la infraestructura de un municipio y la medición de su consumo. Su alcance es el de suministros como electricidad, gas, agua, entre otros.</terms:description>
         <terms:description xml:lang="en">The Utilities ontology describes all concepts related to the utilities provided to a municipality&apos;s infrastructure elements and the measurement of their consumption. Its scope covers utilities such as electricity, gas, water, and others.</terms:description>
         <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-09-17</terms:issued>
-        <terms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+        <terms:license rdf:resource="https://creativecommons.org/licenses/by-sa/4.0/"/>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-09-17</terms:modified>
         <terms:publisher rdf:nodeID="genid6"/>
         <terms:title xml:lang="en">EDINT Utilities Ontology</terms:title>
         <terms:title xml:lang="es">Ontología EDINT de Suministros</terms:title>
         <vann:preferredNamespacePrefix>edintsum</vann:preferredNamespacePrefix>
-        <vann:preferredNamespaceUri rdf:resource="https://edint.es/def/suministro#"/>
+        <vann:preferredNamespaceUri>https://edint.es/def/suministro#</vann:preferredNamespaceUri>
         <rdfs:label xml:lang="es">Suministros</rdfs:label>
         <rdfs:label xml:lang="en">Utilities</rdfs:label>
         <owl:priorVersion rdf:resource="https://github.com/EDINT-Ontologia/edint-ontologia-suministro/releases/tag/v0.2.0"/>
@@ -86,54 +86,54 @@
         <schema:affiliation>Federación Española de Municipios y Provincias</schema:affiliation>
     </rdf:Description>
     <rdf:Description rdf:nodeID="genid7">
-        <rdfs:label xml:lang="es">Infraestructura (edintinf)</rdfs:label>
-        <rdfs:label xml:lang="en">Infrastructure (edintinf)</rdfs:label>
-        <vocab:vocabularyIRI rdf:resource="https://edint.es/def/infraestructura"/>
-    </rdf:Description>
-    <rdf:Description rdf:nodeID="genid8">
-        <rdfs:label xml:lang="en">geo_core (IGN)</rdfs:label>
-        <rdfs:label xml:lang="es">geo_core (IGN)</rdfs:label>
-        <vocab:vocabularyIRI rdf:resource="https://datos.ign.es/def/geo_core"/>
-    </rdf:Description>
-    <rdf:Description rdf:nodeID="genid9">
         <rdfs:label xml:lang="en">SOSA/SSN</rdfs:label>
         <rdfs:label xml:lang="es">SOSA/SSN</rdfs:label>
         <vocab:vocabularyIRI rdf:resource="http://www.w3.org/ns/sosa"/>
     </rdf:Description>
-    <rdf:Description rdf:nodeID="genid10">
-        <rdfs:label xml:lang="en">OWL-Time</rdfs:label>
-        <rdfs:label xml:lang="es">OWL-Time</rdfs:label>
-        <vocab:vocabularyIRI rdf:resource="http://www.w3.org/2006/time"/>
-    </rdf:Description>
-    <rdf:Description rdf:nodeID="genid11">
+    <rdf:Description rdf:nodeID="genid8">
         <rdfs:label xml:lang="en">SAREF</rdfs:label>
         <rdfs:label xml:lang="es">SAREF</rdfs:label>
         <vocab:vocabularyIRI rdf:resource="https://saref.etsi.org/core"/>
     </rdf:Description>
-    <rdf:Description rdf:nodeID="genid12">
-        <rdfs:label xml:lang="en">QUDT</rdfs:label>
-        <rdfs:label xml:lang="es">QUDT</rdfs:label>
-        <vocab:vocabularyIRI rdf:resource="http://qudt.org/schema/qudt"/>
+    <rdf:Description rdf:nodeID="genid9">
+        <rdfs:label xml:lang="es">Infraestructura (edintinf)</rdfs:label>
+        <rdfs:label xml:lang="en">Infrastructure (edintinf)</rdfs:label>
+        <vocab:vocabularyIRI rdf:resource="https://edint.es/def/infraestructura"/>
     </rdf:Description>
-    <rdf:Description rdf:nodeID="genid13">
-        <rdfs:label xml:lang="en">OGC Simple Features</rdfs:label>
-        <rdfs:label xml:lang="es">OGC Simple Features</rdfs:label>
-        <vocab:vocabularyIRI rdf:resource="http://www.opengis.net/ont/sf"/>
+    <rdf:Description rdf:nodeID="genid10">
+        <rdfs:label xml:lang="en">geo_core (IGN)</rdfs:label>
+        <rdfs:label xml:lang="es">geo_core (IGN)</rdfs:label>
+        <vocab:vocabularyIRI rdf:resource="https://datos.ign.es/def/geo_core"/>
     </rdf:Description>
-    <rdf:Description rdf:nodeID="genid14">
+    <rdf:Description rdf:nodeID="genid11">
         <rdfs:label xml:lang="en">GeoSPARQL</rdfs:label>
         <rdfs:label xml:lang="es">GeoSPARQL</rdfs:label>
         <vocab:vocabularyIRI rdf:resource="http://www.opengis.net/ont/geosparql"/>
     </rdf:Description>
-    <rdf:Description rdf:nodeID="genid15">
+    <rdf:Description rdf:nodeID="genid12">
         <rdfs:label xml:lang="es">Territorio (esadm)</rdfs:label>
         <rdfs:label xml:lang="en">Territory (esadm)</rdfs:label>
         <vocab:vocabularyIRI rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio"/>
     </rdf:Description>
-    <rdf:Description rdf:nodeID="genid16">
+    <rdf:Description rdf:nodeID="genid13">
         <rdfs:label xml:lang="en">Traffic (Ciudades Abiertas)</rdfs:label>
         <rdfs:label xml:lang="es">Tráfico (Ciudades Abiertas)</rdfs:label>
         <vocab:vocabularyIRI rdf:resource="http://vocab.ciudadesabiertas.es/def/transporte/trafico"/>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid14">
+        <rdfs:label xml:lang="en">QUDT</rdfs:label>
+        <rdfs:label xml:lang="es">QUDT</rdfs:label>
+        <vocab:vocabularyIRI rdf:resource="http://qudt.org/schema/qudt"/>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid15">
+        <rdfs:label xml:lang="en">OWL-Time</rdfs:label>
+        <rdfs:label xml:lang="es">OWL-Time</rdfs:label>
+        <vocab:vocabularyIRI rdf:resource="http://www.w3.org/2006/time"/>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid16">
+        <rdfs:label xml:lang="en">OGC Simple Features</rdfs:label>
+        <rdfs:label xml:lang="es">OGC Simple Features</rdfs:label>
+        <vocab:vocabularyIRI rdf:resource="http://www.opengis.net/ont/sf"/>
     </rdf:Description>
     
 
