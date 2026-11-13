@@ -50,7 +50,7 @@
         <rdfs:label xml:lang="es">Suministros</rdfs:label>
         <rdfs:label xml:lang="en">Utilities</rdfs:label>
         <vann:preferredNamespacePrefix>edintsum</vann:preferredNamespacePrefix>
-        <vann:preferredNamespaceUri rdf:resource="https://edint.es/def/suministro#"/>
+        <vann:preferredNamespaceUri>https://edint.es/def/suministro#</vann:preferredNamespaceUri>
         <owl:priorVersion rdf:resource="https://github.com/EDINT-Ontologia/edint-ontologia-suministro/releases/tag/v0.2.0"/>
         <schema:codeRepository rdf:resource="https://github.com/EDINT-Ontologia/edint-ontologia-suministro"/>
         <schema:funding>Espacio de Datos para las Infraestructuras Urbanas Inteligentes (EDINT)</schema:funding>
