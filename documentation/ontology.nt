@@ -23,7 +23,7 @@ _:genid5 <http://xmlns.com/foaf/0.1/name> "Daniel Doña" .
 <https://edint.es/def/suministro> <http://purl.org/dc/terms/description> "La ontología de suministros describe todos los conceptos relacionados con los servicios suministrados a los elementos de la infraestructura de un municipio y la medición de su consumo. Su alcance es el de suministros como electricidad, gas, agua, entre otros."@es .
 <https://edint.es/def/suministro> <http://purl.org/dc/terms/description> "The Utilities ontology describes all concepts related to the utilities provided to a municipality's infrastructure elements and the measurement of their consumption. Its scope covers utilities such as electricity, gas, water, and others."@en .
 <https://edint.es/def/suministro> <http://purl.org/dc/terms/issued> "2026-09-17"^^<http://www.w3.org/2001/XMLSchema#date> .
-<https://edint.es/def/suministro> <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> .
+<https://edint.es/def/suministro> <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by-sa/4.0/> .
 <https://edint.es/def/suministro> <http://purl.org/dc/terms/modified> "2026-09-17"^^<http://www.w3.org/2001/XMLSchema#date> .
 <https://edint.es/def/suministro> <http://purl.org/dc/terms/publisher> _:genid6 .
 _:genid6 <https://schema.org/affiliation> "Federación Española de Municipios y Provincias" .
@@ -32,7 +32,7 @@ _:genid6 <http://xmlns.com/foaf/0.1/homepage> <https://www.femp.es/> .
 <https://edint.es/def/suministro> <http://purl.org/dc/terms/title> "EDINT Utilities Ontology"@en .
 <https://edint.es/def/suministro> <http://purl.org/dc/terms/title> "Ontología EDINT de Suministros"@es .
 <https://edint.es/def/suministro> <http://purl.org/vocab/vann/preferredNamespacePrefix> "edintsum" .
-<https://edint.es/def/suministro> <http://purl.org/vocab/vann/preferredNamespaceUri> <https://edint.es/def/suministro#> .
+<https://edint.es/def/suministro> <http://purl.org/vocab/vann/preferredNamespaceUri> "https://edint.es/def/suministro#" .
 <https://edint.es/def/suministro> <http://www.w3.org/2000/01/rdf-schema#label> "Suministros"@es .
 <https://edint.es/def/suministro> <http://www.w3.org/2000/01/rdf-schema#label> "Utilities"@en .
 <https://edint.es/def/suministro> <http://www.w3.org/2002/07/owl#priorVersion> <https://github.com/EDINT-Ontologia/edint-ontologia-suministro/releases/tag/v0.2.0> .
@@ -45,45 +45,45 @@ _:genid6 <http://xmlns.com/foaf/0.1/homepage> <https://www.femp.es/> .
 <https://edint.es/def/suministro> <https://w3id.org/widoco/vocab#rdfxmlSerialization> "ontology.rdf" .
 <https://edint.es/def/suministro> <https://w3id.org/widoco/vocab#turtleSerialization> "ontology.ttl" .
 <https://edint.es/def/suministro> <https://w3id.org/widoco/vocab#vocabularyLabel> _:genid7 .
-_:genid7 <https://w3id.org/widoco/vocab#vocabularyIRI> <https://edint.es/def/infraestructura> .
-_:genid7 <http://www.w3.org/2000/01/rdf-schema#label> "Infrastructure (edintinf)"@en .
-_:genid7 <http://www.w3.org/2000/01/rdf-schema#label> "Infraestructura (edintinf)"@es .
+_:genid7 <https://w3id.org/widoco/vocab#vocabularyIRI> <http://www.w3.org/ns/sosa> .
+_:genid7 <http://www.w3.org/2000/01/rdf-schema#label> "SOSA/SSN"@es .
+_:genid7 <http://www.w3.org/2000/01/rdf-schema#label> "SOSA/SSN"@en .
 <https://edint.es/def/suministro> <https://w3id.org/widoco/vocab#vocabularyLabel> _:genid8 .
-_:genid8 <https://w3id.org/widoco/vocab#vocabularyIRI> <https://datos.ign.es/def/geo_core> .
-_:genid8 <http://www.w3.org/2000/01/rdf-schema#label> "geo_core (IGN)"@es .
-_:genid8 <http://www.w3.org/2000/01/rdf-schema#label> "geo_core (IGN)"@en .
+_:genid8 <https://w3id.org/widoco/vocab#vocabularyIRI> <https://saref.etsi.org/core> .
+_:genid8 <http://www.w3.org/2000/01/rdf-schema#label> "SAREF"@es .
+_:genid8 <http://www.w3.org/2000/01/rdf-schema#label> "SAREF"@en .
 <https://edint.es/def/suministro> <https://w3id.org/widoco/vocab#vocabularyLabel> _:genid9 .
-_:genid9 <https://w3id.org/widoco/vocab#vocabularyIRI> <http://www.w3.org/ns/sosa> .
-_:genid9 <http://www.w3.org/2000/01/rdf-schema#label> "SOSA/SSN"@es .
-_:genid9 <http://www.w3.org/2000/01/rdf-schema#label> "SOSA/SSN"@en .
+_:genid9 <https://w3id.org/widoco/vocab#vocabularyIRI> <https://edint.es/def/infraestructura> .
+_:genid9 <http://www.w3.org/2000/01/rdf-schema#label> "Infrastructure (edintinf)"@en .
+_:genid9 <http://www.w3.org/2000/01/rdf-schema#label> "Infraestructura (edintinf)"@es .
 <https://edint.es/def/suministro> <https://w3id.org/widoco/vocab#vocabularyLabel> _:genid10 .
-_:genid10 <https://w3id.org/widoco/vocab#vocabularyIRI> <http://www.w3.org/2006/time> .
-_:genid10 <http://www.w3.org/2000/01/rdf-schema#label> "OWL-Time"@es .
-_:genid10 <http://www.w3.org/2000/01/rdf-schema#label> "OWL-Time"@en .
+_:genid10 <https://w3id.org/widoco/vocab#vocabularyIRI> <https://datos.ign.es/def/geo_core> .
+_:genid10 <http://www.w3.org/2000/01/rdf-schema#label> "geo_core (IGN)"@es .
+_:genid10 <http://www.w3.org/2000/01/rdf-schema#label> "geo_core (IGN)"@en .
 <https://edint.es/def/suministro> <https://w3id.org/widoco/vocab#vocabularyLabel> _:genid11 .
-_:genid11 <https://w3id.org/widoco/vocab#vocabularyIRI> <https://saref.etsi.org/core> .
-_:genid11 <http://www.w3.org/2000/01/rdf-schema#label> "SAREF"@es .
-_:genid11 <http://www.w3.org/2000/01/rdf-schema#label> "SAREF"@en .
+_:genid11 <https://w3id.org/widoco/vocab#vocabularyIRI> <http://www.opengis.net/ont/geosparql> .
+_:genid11 <http://www.w3.org/2000/01/rdf-schema#label> "GeoSPARQL"@es .
+_:genid11 <http://www.w3.org/2000/01/rdf-schema#label> "GeoSPARQL"@en .
 <https://edint.es/def/suministro> <https://w3id.org/widoco/vocab#vocabularyLabel> _:genid12 .
-_:genid12 <https://w3id.org/widoco/vocab#vocabularyIRI> <http://qudt.org/schema/qudt> .
-_:genid12 <http://www.w3.org/2000/01/rdf-schema#label> "QUDT"@es .
-_:genid12 <http://www.w3.org/2000/01/rdf-schema#label> "QUDT"@en .
+_:genid12 <https://w3id.org/widoco/vocab#vocabularyIRI> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio> .
+_:genid12 <http://www.w3.org/2000/01/rdf-schema#label> "Territory (esadm)"@en .
+_:genid12 <http://www.w3.org/2000/01/rdf-schema#label> "Territorio (esadm)"@es .
 <https://edint.es/def/suministro> <https://w3id.org/widoco/vocab#vocabularyLabel> _:genid13 .
-_:genid13 <https://w3id.org/widoco/vocab#vocabularyIRI> <http://www.opengis.net/ont/sf> .
-_:genid13 <http://www.w3.org/2000/01/rdf-schema#label> "OGC Simple Features"@es .
-_:genid13 <http://www.w3.org/2000/01/rdf-schema#label> "OGC Simple Features"@en .
+_:genid13 <https://w3id.org/widoco/vocab#vocabularyIRI> <http://vocab.ciudadesabiertas.es/def/transporte/trafico> .
+_:genid13 <http://www.w3.org/2000/01/rdf-schema#label> "Tráfico (Ciudades Abiertas)"@es .
+_:genid13 <http://www.w3.org/2000/01/rdf-schema#label> "Traffic (Ciudades Abiertas)"@en .
 <https://edint.es/def/suministro> <https://w3id.org/widoco/vocab#vocabularyLabel> _:genid14 .
-_:genid14 <https://w3id.org/widoco/vocab#vocabularyIRI> <http://www.opengis.net/ont/geosparql> .
-_:genid14 <http://www.w3.org/2000/01/rdf-schema#label> "GeoSPARQL"@es .
-_:genid14 <http://www.w3.org/2000/01/rdf-schema#label> "GeoSPARQL"@en .
+_:genid14 <https://w3id.org/widoco/vocab#vocabularyIRI> <http://qudt.org/schema/qudt> .
+_:genid14 <http://www.w3.org/2000/01/rdf-schema#label> "QUDT"@es .
+_:genid14 <http://www.w3.org/2000/01/rdf-schema#label> "QUDT"@en .
 <https://edint.es/def/suministro> <https://w3id.org/widoco/vocab#vocabularyLabel> _:genid15 .
-_:genid15 <https://w3id.org/widoco/vocab#vocabularyIRI> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio> .
-_:genid15 <http://www.w3.org/2000/01/rdf-schema#label> "Territory (esadm)"@en .
-_:genid15 <http://www.w3.org/2000/01/rdf-schema#label> "Territorio (esadm)"@es .
+_:genid15 <https://w3id.org/widoco/vocab#vocabularyIRI> <http://www.w3.org/2006/time> .
+_:genid15 <http://www.w3.org/2000/01/rdf-schema#label> "OWL-Time"@es .
+_:genid15 <http://www.w3.org/2000/01/rdf-schema#label> "OWL-Time"@en .
 <https://edint.es/def/suministro> <https://w3id.org/widoco/vocab#vocabularyLabel> _:genid16 .
-_:genid16 <https://w3id.org/widoco/vocab#vocabularyIRI> <http://vocab.ciudadesabiertas.es/def/transporte/trafico> .
-_:genid16 <http://www.w3.org/2000/01/rdf-schema#label> "Tráfico (Ciudades Abiertas)"@es .
-_:genid16 <http://www.w3.org/2000/01/rdf-schema#label> "Traffic (Ciudades Abiertas)"@en .
+_:genid16 <https://w3id.org/widoco/vocab#vocabularyIRI> <http://www.opengis.net/ont/sf> .
+_:genid16 <http://www.w3.org/2000/01/rdf-schema#label> "OGC Simple Features"@es .
+_:genid16 <http://www.w3.org/2000/01/rdf-schema#label> "OGC Simple Features"@en .
 # 
 # 
 # #################################################################
