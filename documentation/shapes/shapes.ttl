@@ -1,5 +1,5 @@
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix edintinf: <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/infraestructura#> .
+@prefix edintinf: <https://edint.es/def/infraestructura#> .
 @prefix geo: <http://www.opengis.net/ont/geosparql#> .
 @prefix qudt: <http://qudt.org/schema/qudt/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -32,7 +32,7 @@
     sh:name "Utility meter"@en,
         "Medidor suministro"@es ;
     sh:nodeKind sh:IRI ;
-    sh:targetClass <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/suministro#UtilityMeter> .
+    sh:targetClass <https://edint.es/def/suministro#UtilityMeter> .
 
 <https://astrea.linkeddata.es/shapes#1277b387effe1ea8b7cf6171d6155a1b> a sh:NodeShape ;
     rdfs:label "Time instant"@en,
@@ -329,7 +329,7 @@ Su nombre, que se especifica con la propiedad dct:title, es el proporcionado por
     sh:name "Utility supply point"@en,
         "Punto de suministro de servicio"@es ;
     sh:nodeKind sh:IRI ;
-    sh:targetClass <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/suministro#UtilitySupplyPoint> .
+    sh:targetClass <https://edint.es/def/suministro#UtilitySupplyPoint> .
 
 <https://astrea.linkeddata.es/shapes#c61898f24403ef1f26f4d3767e07d074> a sh:NodeShape ;
     rdfs:label "Meter"@en ;
@@ -357,7 +357,7 @@ Su nombre, que se especifica con la propiedad dct:title, es el proporcionado por
     sh:name "Utility consumption"@en,
         "Consumo suministro"@es ;
     sh:nodeKind sh:IRI ;
-    sh:targetClass <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/suministro#UtilityConsumption> .
+    sh:targetClass <https://edint.es/def/suministro#UtilityConsumption> .
 
 <https://astrea.linkeddata.es/shapes#d1970d838f4f4ed864b70a4170b43c10> a sh:NodeShape ;
     rdfs:label "A utility rate is the specific price structure or tariff charged by a service provider for a unit of consumption of a utility, such as kilowatt-hours of electricity or cubic meters of water."@en,
@@ -369,7 +369,7 @@ Su nombre, que se especifica con la propiedad dct:title, es el proporcionado por
         "La tarifa de un suministro es la estructura de precios o tarifa específica que cobra un proveedor de suministros por una unidad de consumo de un suministro, como kilovatios-hora de electricidad o metros cúbicos de agua."@es,
         "Tarifa suministro"@es ;
     sh:nodeKind sh:IRI ;
-    sh:targetClass <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/suministro#UtilityRate> .
+    sh:targetClass <https://edint.es/def/suministro#UtilityRate> .
 
 <https://astrea.linkeddata.es/shapes#d821e1e2099d642f041ed7eededffd7b> sh:nodeKind sh:Literal .
 
@@ -397,7 +397,7 @@ Su nombre, que se especifica con la propiedad dct:title, es el proporcionado por
     sh:property <https://astrea.linkeddata.es/shapes#3b612a5482329266c6abc925f2cf2f88>,
         <https://astrea.linkeddata.es/shapes#956baf39b1b058e8934cb617d80c57d3>,
         <https://astrea.linkeddata.es/shapes#e0bbfe4e331d3e32080f2276e8d1ce34> ;
-    sh:targetClass <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/suministro#UtilityContract> .
+    sh:targetClass <https://edint.es/def/suministro#UtilityContract> .
 
 <https://astrea.linkeddata.es/shapes#e4f8f8b501b2ca66a414aa9bc2ee33cf> a sh:PropertyShape ;
     rdfs:label "The manufacturer of the product."@en,
@@ -474,7 +474,7 @@ Su nombre, que se especifica con la propiedad dct:title, es el proporcionado por
     sh:name "Parking"@en,
         "Aparcamiento"@es ;
     sh:nodeKind sh:IRI ;
-    sh:targetClass <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/aparcamiento#Parking> .
+    sh:targetClass <https://edint.es/def/aparcamiento#Parking> .
 
 <https://astrea.linkeddata.es/shapes#fa78cfbce37dbcb34ab378481e7243c2> a sh:NodeShape ;
     rdfs:label "Quantity value" ;
@@ -540,13 +540,13 @@ Su nombre, que se especifica con la propiedad dct:title, es el proporcionado por
         "has utility supply point"@en,
         "Relación entre un elemento de la infraestructura y un punto de suministro de servicio."@es,
         "tiene punto de suministro de servicio"@es ;
-    sh:class <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/suministro#UtilitySupplyPoint> ;
+    sh:class <https://edint.es/def/suministro#UtilitySupplyPoint> ;
     sh:description "Relationship between an infrastructure element and a utility supply point."@en,
         "Relación entre un elemento de la infraestructura y un punto de suministro de servicio."@es ;
     sh:name "has utility supply point"@en,
         "tiene punto de suministro de servicio"@es ;
     sh:nodeKind sh:BlankNodeOrIRI ;
-    sh:path <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/suministro#hasUtilitySupplyPoint> .
+    sh:path <https://edint.es/def/suministro#hasUtilitySupplyPoint> .
 
 <https://astrea.linkeddata.es/shapes#3348f96caa15fb50d86f0a2231585642> a sh:PropertyShape ;
     rdfs:label "has geometry"@en,
@@ -565,13 +565,13 @@ Su nombre, que se especifica con la propiedad dct:title, es el proporcionado por
         "has rate"@en,
         "Relación entre un contrato de suministro de un servicio y la tarifa que se aplica en dicho contrato."@es,
         "tiene tarifa"@es ;
-    sh:class <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/suministro#UtilityRate> ;
+    sh:class <https://edint.es/def/suministro#UtilityRate> ;
     sh:description "Relationship between a utility contracto and the rate that is applied in the contract."@en,
         "Relación entre un contrato de suministro de un servicio y la tarifa que se aplica en dicho contrato."@es ;
     sh:name "has rate"@en,
         "tiene tarifa"@es ;
     sh:nodeKind sh:BlankNodeOrIRI ;
-    sh:path <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/suministro#hasRate> .
+    sh:path <https://edint.es/def/suministro#hasRate> .
 
 <https://astrea.linkeddata.es/shapes#6fdcb6fa74959cc52414f19ced544249> a sh:PropertyShape ;
     rdfs:label "Position of an instant, expressed using xsd:dateTimeStamp"@en,
@@ -630,13 +630,13 @@ Su nombre, que se especifica con la propiedad dct:title, es el proporcionado por
         "applies to"@en,
         "Relación entre el contrato de suministro y el punto de suministro de servicio al que se aplica."@es,
         "aplicadoEn"@es ;
-    sh:class <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/suministro#UtilitySupplyPoint> ;
+    sh:class <https://edint.es/def/suministro#UtilitySupplyPoint> ;
     sh:description "Relationship between the utility contract and the utillity supply point which it applies to."@en,
         "Relación entre el contrato de suministro y el punto de suministro de servicio al que se aplica."@es ;
     sh:name "applies to"@en,
         "aplicadoEn"@es ;
     sh:nodeKind sh:BlankNodeOrIRI ;
-    sh:path <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/suministro#appliesTo> .
+    sh:path <https://edint.es/def/suministro#appliesTo> .
 
 <https://astrea.linkeddata.es/shapes#b28f1a50b3141c95955799dfa1cd4295> a sh:PropertyShape ;
     rdfs:label "Relation linking an Observation to the property that was observed. The ObservableProperty should be a property of the FeatureOfInterest (linked by hasFeatureOfInterest) of this Observation."@en,
@@ -691,7 +691,7 @@ Su nombre, que se especifica con la propiedad dct:title, es el proporcionado por
     sh:name "contract holder"@en,
         "titular contrato"@es ;
     sh:nodeKind sh:BlankNodeOrIRI ;
-    sh:path <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/suministro#contractHolder> .
+    sh:path <https://edint.es/def/suministro#contractHolder> .
 
 <https://astrea.linkeddata.es/shapes#f4b3df753bc2c96f73b6c78451bbe220> a sh:PropertyShape ;
     rdfs:label "made by sensor or observer"@en,
